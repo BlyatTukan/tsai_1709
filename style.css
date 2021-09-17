@@ -1,0 +1,39 @@
+:root{
+    --bg-main: #222;
+    --bg-second: #444;
+    --accent: lime;
+    --txt-color: white;
+}
+
+*{
+    background-color: var(--bg-main);
+    color: var(--txt-color);
+    text-align: center;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.kordian{
+    text-align: left;
+    padding: 0px 100px;
+}
+.kordian h2{
+    text-align: left;
+    padding: 20px 0px 0px 0px;
+    font-size: 22px;
+}
+blockquote{
+    text-align: left;
+}
+.kordian p{
+    text-align: left;
+    margin: 0;
+}
+.kordian a{
+    color: var(--accent);
+    font-size: 14px;
+    margin-left: 5px;
+}
