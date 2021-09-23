@@ -28,7 +28,7 @@ h1{
 blockquote{
     text-align: left;
 }
-.kordian p{
+.kordian .indent{
     text-align: left;
     margin: 0;
 }
