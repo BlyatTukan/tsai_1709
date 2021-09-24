@@ -1,39 +1,51 @@
 :root{
-    --bg-main: #222;
-    --bg-second: #444;
-    --accent: lime;
-    --txt-color: white;
+--bg-main: #222;
+--bg-second: #444;
+--accent: lime;
+--txt-color: white;
+--txt-secound: #aaa;
 }
 
 *{
-    background-color: var(--bg-main);
-    color: var(--txt-color);
-    text-align: center;
-    font-size: 18px;
+background-color: var(--bg-main);
+color: var(--txt-color);
+text-align: center;
+font-size: 1rem;
 }
 
-h1{
-    font-size: 36px;
+.kordian h1{
+font-size: 4rem;
+margin-bottom: 0;
+}
+.kordian h3{
+font-size: 2rem;
+margin: 0;
+color: var(--txt-secound);
+}
+.kordian h4{
+margin: 0.5rem;
+margin-bottom: 4rem;
+color: var(--accent);
 }
 
 .kordian{
-    text-align: left;
-    padding: 0px 100px;
+text-align: left;
+padding: 0px 5rem;
 }
 .kordian h2{
-    text-align: left;
-    padding: 20px 0px 0px 0px;
-    font-size: 22px;
+text-align: left;
+padding: 1rem 0px 0px 0px;
+font-size:1.5rem;
 }
 blockquote{
-    text-align: left;
+text-align: left;
 }
 .kordian .indent{
-    text-align: left;
-    margin: 0;
+text-align: left;
+margin: 0;
 }
 .kordian a{
-    color: var(--accent);
-    font-size: 14px;
-    margin-left: 5px;
+color: var(--accent);
+font-size:.75rem;
+margin-left: .25rem;
 }
