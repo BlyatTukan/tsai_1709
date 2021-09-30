@@ -5,27 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TSAI | Home</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f914c1df03.js" crossorigin="anonymous"></script>
         
     </head>
     <body>
-        <!--<section class="header">
-            <ul>
-                <li>HOME</li>
-                <li>LOREM IPSUM</li>
-                <li>STYLE IN CSS</li>
-                <li>IMAGES</li>
-            </ul>
-        </section>-->
-
-        <section class="main">
-            <hr><h1 class="title">Home</h1>
-            <h3 class="subtitle">W Planach</h3>
-            <h4 class="date">17.09.2021 - ...</h4><hr>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus est, mollis id augue ut, sodales molestie sapien. Curabitur feugiat diam eu metus suscipit ultrices.</p>
+        <section class="navbar">
+            <a class="active" href="#main"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="#lorem_ipsum"><i class="fa fa-fw fa-search"></i> Lorem Ipsum</a> 
+            <a href="#portfolio"><i class="fa fa-fw fa-envelope"></i> Portfolio</a> 
+            <a href="#colors"><i class="fa fa-fw fa-user"></i> Kolory HTML</a>
+            <a href="#kordian"><i class="fa fa-fw fa-user"></i> Kordian</a>
+            <a href="#footer"><i class="fa fa-fw fa-user"></i> Stopka</a>
         </section>
 
-        <section class="lorem_ipsum">
+        <section class="main" id="main">
+            <hr><h1 class="title">Home</h1>
+            <h3 class="subtitle">Motyw Strony</h3>
+            <h4 class="date">01.10.2021</h4><hr>
+
+
+            <p id="mode-txt">Aktywny Ciemny Motyw</p>
+            <button type="button" class="home_btn hb_lm" onclick="LightModeOn()">
+                <span class="home_btn_txt">Jasny Motyw</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-sun"></i>
+                </span>
+            </button>
+            <button type="button" class="home_btn hb_dm" onclick="DarkModeOn()">
+                <span class="home_btn_txt">Ciemny Motyw</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+            
+        </section>
+
+        <section class="lorem_ipsum" id="lorem_ipsum">
             <hr><h1 class="title">Lorem Ipsum</h1>
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
             <h4 class="date">24.09.2021</h4><hr>
@@ -38,23 +53,103 @@
             </p>
         </section>
 
-        <section class="images">
-            <hr><h1 class="title">Zdjęcia</h1>
-            <h3 class="subtitle">W Planach</h3>
-            <h4 class="date">Nierozpoczęte :(</h4><hr>
+        <section class="portfolio" id="portfolio">
+            <hr><h1 class="title">Portfolio</h1>
+            <h3 class="subtitle">Gry i nie tylko</h3>
+            <h4 class="date">01.10.2021</h4><hr>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus est, mollis id augue ut, sodales molestie sapien. Curabitur feugiat diam eu metus suscipit ultrices.</p>
+            <a type="button" class="home_btn hb_pa" href="https://drive.google.com/file/d/1RCm4CL5uBDiJZE7AqhwR-W6qRNWNXynu/view?usp=sharing" target="_blank">
+                <span class="home_btn_txt">PROJECT AREA (Android)</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-cloud-download-alt"></i>
+                </span>
+            </a>
+            <a type="button" class="home_btn hb_mra" href="https://drive.google.com/file/d/1JPrY1sxOL-Ck9jCHBJXYfnjFhMe3txoR/view?usp=sharing" target="_blank">
+                <span class="home_btn_txt">Minicar Race (Android)</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-cloud-download-alt"></i>
+                </span>
+            </a>
+            <a type="button" class="home_btn hb_mrp" href="https://github.com/BlyatTukan" target="_blank">
+                <span class="home_btn_txt">Minicar Race (PC)</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-cloud-download-alt"></i>
+                </span>
+            </a>
+            <a type="button" class="home_btn hb_tss" href="https://blyattukan.github.io/company-page-temporal/" target="_blank">
+                <span class="home_btn_txt">Tiny Slime Studio</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-pager"></i>
+                </span>
+            </a>
+            <a type="button" class="home_btn hb_g" href="https://github.com/BlyatTukan" target="_blank">
+                <span class="home_btn_txt">GITHUB</span>
+                <span class="home_btn_icon">
+                    <i class="fab fa-github"></i>
+                </span>
+            </a>
         </section>
 
-        <section class="colors">
-            <hr><h1 class="title">Kolory Tekstu</h1>
+        <section class="colors" id="colors">
+            <hr><h1 class="title">Kolory Tekstu i Linki</h1>
             <h3 class="subtitle">Zmiana Koloru Tła, tekstu itp.</h3>
-            <h4 class="date">24.09.2021 - ...</h4><hr>
+            <h4 class="date">24.09.2021 - 01.10.2021</h4><hr>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus est, mollis id augue ut, sodales molestie sapien. Curabitur feugiat diam eu metus suscipit ultrices.</p>
+            <h1 class="title">Kolory w HTML</h1>
+
+            <div class="grid-container">
+                <div class="grid-item"><p>NAZWA</p></div>
+                <div class="grid-item"><p>RGB</p></div>
+                <div class="grid-item"><p>HEX</p></div>  
+                <div class="grid-item"><p>HSL</p></div>
+
+                <div class="grid-item"><p style="background: orangered;">Tło<br>"Orage Red"</p></div>
+                <div class="grid-item"><p style="background: rgb(255, 69, 0);">Tło<br>(255, 69, 0)</p></div>
+                <div class="grid-item"><p style="background: #FF4500;">Tło<br>#FF4500</p></div>
+                <div class="grid-item"><p style="background: hsl(16, 100%, 50%);">Tło<br>(16, 100%, 50%)</p></div>
+
+                <div class="grid-item"><p style="color: DarkRed;">Text<br>"Dark Red"</p></div>
+                <div class="grid-item"><p style="color: rgb(139, 0, 0);">Text<br>(139, 0, 0)</p></div>
+                <div class="grid-item"><p style="color: #8B0000;">Text<br>#8B0000</p></div>
+                <div class="grid-item"><p style="color: hsl(0, 100%, 27%);">Text<br>(0, 100%, 27%)</p></div>
+
+                <div class="grid-item"><p style="background: Indigo; color: SpringGreen;">Text "Spring Green"<br>Tło "Indigo"</p></div>
+                <div class="grid-item"><p style="background: rgb(75, 0, 130); color: rgb(0, 255, 127);">Text (0, 255, 127)<br>Tło (75, 0, 130)</p></div>
+                <div class="grid-item"><p style="background: #4B0082; color: #00FF7F;">Text #00FF7F<br>Tło #4B0082</p></div>
+                <div class="grid-item"><p style="background: hsl(275, 100%, 25%); color: hsl(150, 100%, 50%);">Text (150, 100%, 50%)<br>Tło (275, 100%, 25%)</p></div>
+            </div>
+
+            <h1 class="title">Linki i Odniesienia</h1>
+
+            <div class="grid-container">
+                <div class="grid-item"><p>ZWYKŁY<br>(GITHUB)</p></div>
+                <div class="grid-item"><p>DO ELEMENTU<br>(PORTFOLIO)</p></div>
+                <div class="grid-item"><p>NOWE OKNO<br>(TINY SLIME STUDIO)</p></div>  
+                <div class="grid-item"><p>DO GRAFIKI<br>(PLACKI)</p></div>
+
+                <div class="grid-item"><a href="https://github.com/BlyatTukan">Bez Stylów</a> </div>
+                <div class="grid-item"><a href="#portfolio">Bez Stylów</a> </div>
+                <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank">Bez Stylów</a> </div>
+                <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank">Bez Stylów</a> </div>
+
+                <div class="grid-item"><a href="https://github.com/BlyatTukan" class="link_a">Zielony Link</a> </div>
+                <div class="grid-item"><a href="#portfolio" class="link_a">Zielony Link</a> </div>
+                <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="link_a">Zielony Link</a> </div>
+                <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="link_a">Zielony Link</a> </div>
+
+                <div class="grid-item"><a href="https://github.com/BlyatTukan" class="link_b">Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="#portfolio" class="link_b">Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="link_b">Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="link_b">Przycisk z Linku</a> </div>
+
+                <div class="grid-item"><a href="https://github.com/BlyatTukan" class="btn btn1">Animowany Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="#portfolio" class="btn btn2">Animowany Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="btn btn3">Animowany Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="btn btn4">Animowany Przycisk z Linku</a> </div>
+            </div>
         </section>
 
-        <section class="kordian">
+        <section class="kordian" id="kordian">
             <hr><h1 class="title">Kordian</h1>
             <h3 class="subtitle">Fragment Książki "Kordian"</h3>
             <h4 class="date">17.09.2021 - 24.09.2021</h4><hr>
@@ -63,8 +158,8 @@
                 <h2>CHÓR</h2>
 
                 Co powiedzieli gwarem, Bóg tylko zrozumie,<br>
-                Jak modlitwę rozbita<a href="#107_O" id="107_T">[107]</a> w morza głuchym szumie.
-                <blockquote>Sześciu Żołnierzy przyprowadzają<a href="#108_O" id="108_T">[108]</a> bladego Kordiana. Stawią przed Carem…<br> Wielki Książę przybiega z wściekłością</blockquote>
+                Jak modlitwę rozbita<sup><a href="#107_O" id="107_T">[107]</a></sup> w morza głuchym szumie.
+                <blockquote>Sześciu Żołnierzy przyprowadzają<sup><a href="#108_O" id="108_T">[108]</a></sup> bladego Kordiana. Stawią przed Carem…<br> Wielki Książę przybiega z wściekłością</blockquote>
 
                 <h2>WIELKI KSIĄŻĘ</h2>
 
@@ -74,7 +169,7 @@
                 Ty nosisz szlify? precz! precz! precz! Rozciskam gady.<br>
                 Rzucę cię pod kopyta trójrzędnego szyku<br>
                 Albo tu zwalę w piasek… i moją ostrogą<br>
-                Napiszę «wor»<a href="#109_O" id="109_T">[109]</a> na czole. Car ciebie darował<br>
+                Napiszę «wor»<sup><a href="#109_O" id="109_T">[109]</a></sup> na czole. Car ciebie darował<br>
                 Zemście mojej… Car ciebie sam w grobie pochował!<br>
                 Z książęcej dłoni diabły wydobyć nie mogą!
 
@@ -108,12 +203,35 @@
 
         </section>
 
-        <section class="footer">
+        <section class="footer" id="footer">
             <hr><h1 class="title">Footer</h1>
             <h3 class="subtitle">Koniec Strony</h3>
             <h4 class="date">24.09.2021</h4><hr>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus est, mollis id augue ut, sodales molestie sapien. Curabitur feugiat diam eu metus suscipit ultrices.</p>
         </section>
+
+        <script>
+            function LightModeOn() {
+                document.getElementById("mode-txt").innerText = "Aktywny Jasny Motyw";
+                let root = document.querySelector(":root");
+                root.style.setProperty("--bg-main", "#ddd");
+                root.style.setProperty("--bg-second", "#bbb");
+                root.style.setProperty("--accent", "#0093E9");
+                root.style.setProperty("--accent2", "#80D0C7");
+                root.style.setProperty("--txt-color", "#000");
+                root.style.setProperty("--txt-secound", "#333");
+            }   
+            function DarkModeOn() {
+                document.getElementById("mode-txt").innerText = "Aktywny Ciemny Motyw";
+                let root = document.querySelector(":root");
+                root.style.setProperty("--bg-main", "#222");
+                root.style.setProperty("--bg-second", "#444");
+                root.style.setProperty("--accent", "#32cd32");
+                root.style.setProperty("--accent2", "#0caf0c");
+                root.style.setProperty("--txt-color", "white");
+                root.style.setProperty("--txt-secound", "#bbb");
+            }
+        </script>
     </body>
 </html>

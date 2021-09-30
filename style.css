@@ -1,17 +1,78 @@
 :root{
     --bg-main: #222;
     --bg-second: #444;
-    --accent: lime;
+    --accent: #32cd32;
+    --accent2:#0caf0c;
     --txt-color: white;
-    --txt-secound: #aaa;
+    --txt-secound: #bbb;
+
+    --light-mode-btn: #ccc;
+    --dark-mode-btn: #333;
+    
+    --project-area-btn: #f53844;
+    --minicar-race-android-btn: #3DDC84 ;
+    --minicar-race-pc-btn: #2a475e;
+    --tiny-slime-studio-btn: #09c6f9;
+    --github-btn: #333;
+
+    --gradient-btn1: linear-gradient(to left, #FFD200, #F7971E);
+    --gradient-btn2: linear-gradient(to left, #0575E6, #021b79);
+    --gradient-btn3: linear-gradient(to left, #333399, #ff00cc);
+    --gradient-btn4: linear-gradient(to left, #556270, #4ecdc4);
 }
 
 *{
-    background-color: var(--bg-main);
+    background: var(--bg-main);
     color: var(--txt-color);
     text-align: center;
     padding: 0px 2rem;
     font-size: 18px;
+    font-family: verdana;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    background-color: transparent;
+}
+
+/* NAGŁÓWEK */
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: math(100%-4rem);
+    background-color: var(--bg-second);
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    padding: 0 4rem;
+}
+  
+.navbar a {
+    float: left;
+    padding: 1.5rem;
+    color: var(--txt-color);
+    background-color: var(--bg-second);
+    text-decoration: none;
+}
+
+.navbar i{
+    padding: 0;
+    background: transparent;
+}
+  
+.navbar a:hover {
+    background-color: var(--bg-main);
+}
+  
+.active {
+    background-color: var(--accent) !important;
+}
+
+.main{
+    padding: 4rem 2rem 0 2rem;
 }
 
 .title{
@@ -31,9 +92,138 @@
     color: var(--accent);
 }
 
+.home_btn{
+    display: inline-flex;
+    height: 3rem;
+    padding: 0;
+    background: #0575E6;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin: .5rem;
+    text-decoration: none;
+}
+.home_btn_txt,
+.home_btn_icon{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    color: var(--txt-color);
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+.home_btn_icon{
+    font-size: 1.6rem;
+    background: rgba(0,0,0,0.1);
+}
+.home_btn_icon i{
+    background: transparent;
+    padding: 0;
+    color: #fff;
+}
+
+
+.hb_lm{
+    background: var(--light-mode-btn);
+}
+.hb_lm .home_btn_txt,
+.hb_lm .home_btn_icon i{
+    color: #333;
+}
+.hb_dm{
+    background: var(--dark-mode-btn);
+}
+.hb_dm .home_btn_txt,
+.hb_dm .home_btn_icon i{
+    color: white;
+}
+.hb_pa{
+    background: var(--project-area-btn);
+}
+.hb_mra{
+    background: var(--minicar-race-android-btn);
+}
+.hb_mrp{
+    background: var(--minicar-race-pc-btn);
+}
+.hb_tss{
+    background: var(--tiny-slime-studio-btn);
+}
+.hb_g{
+    background: var(--github-btn);
+}
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+    padding: .5rem;
+    min-height: 5rem;
+}
+
+.grid-item p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem 0;
+    line-height: 150%;
+}
+.link_a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: green;
+}
+.link_b{
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--accent), var(--accent2));
+    color: white;
+    box-shadow: 0 0 20px var(--bg-second);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.btn{
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    padding: 1.2rem 2.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-size: 200%;
+    transition: 0.5s;
+    border: .25rem solid var(--bg-second);
+    color: #fff;
+}
+
+.btn1{
+    background-image: var(--gradient-btn1);
+}
+.btn2{
+    background-image: var(--gradient-btn2);
+}
+.btn3{
+    background-image: var(--gradient-btn3);
+}
+.btn4{
+    background-image: var(--gradient-btn4);
+}
+.btn:hover{
+    background-position: right;
+}
+
+
 .kordian{
     text-align: left;
-    padding: 0;
 }
 .kordian h2{
     text-align: left;
@@ -55,17 +245,22 @@ blockquote{
     margin-left: .25rem;
     padding: 0;
 }
+.kordian sup{
+    padding: 0;
+}
 
 .kordian i{
     padding: .25rem;
 }
 
-@media (max-width: 825px){
+
+
+@media screen and (max-width: 825px){
     *{
         font-size: 15px;
     }
 } 
-@media (max-width: 770px){
+@media screen and (max-width: 770px){
     *{
         padding: .25rem;
     }
@@ -73,8 +268,15 @@ blockquote{
         padding: 0;
     }
 } 
-@media (max-width: 620px){
+@media screen and (max-width: 620px){
     *{
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
