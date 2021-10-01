@@ -169,6 +169,10 @@ a{
     padding: .5rem;
     min-height: 5rem;
 }
+.grid-item-img{
+    max-width: 12rem;
+    max-height: 6.75rem;
+}
 
 .grid-item p{
     font-size: 1.2rem;
@@ -254,7 +258,11 @@ blockquote{
 }
 
 
-
+@media screen and (max-width: 1900px){
+    .btn{
+        font-size: .6rem;
+    }
+} 
 @media screen and (max-width: 825px){
     *{
         font-size: 15px;
