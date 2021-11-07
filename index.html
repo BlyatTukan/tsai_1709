@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="" id="html">
     <head>
         <meta charset="UTF-8">
         <title>TSAI | Home</title>
@@ -18,6 +18,7 @@
             <a href="#portfolio"><i class="fa fa-fw fa-envelope"></i> Portfolio</a> 
             <a href="#colors"><i class="fa fa-fw fa-user"></i> Kolory HTML</a>
             <a href="#kordian"><i class="fa fa-fw fa-user"></i> Kordian</a>
+            <a href="#zdjecia"><i class="fa fa-fw fa-envelope"></i> Zdjęcia</a>
             <a href="#footer"><i class="fa fa-fw fa-user"></i> Stopka</a>
         </section>
 
@@ -28,14 +29,46 @@
 
 
             <p id="mode-txt">Aktywny Ciemny Motyw</p>
-            <button type="button" class="home_btn hb_lm" onclick="LightModeOn()">
+            <button type="button" class="home_btn hb_lm" onclick="LightMode()">
                 <span class="home_btn_txt">Jasny Motyw</span>
                 <span class="home_btn_icon">
                     <i class="fas fa-sun"></i>
                 </span>
             </button>
-            <button type="button" class="home_btn hb_dm" onclick="DarkModeOn()">
+            <button type="button" class="home_btn hb_dm" onclick="DarkMode()">
                 <span class="home_btn_txt">Ciemny Motyw</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+
+            <p id="accent-mode-txt">Aktywny Zielony Akcent</p>
+            <button type="button" class="home_btn hb_red" onclick="RedAccent()">
+                <span class="home_btn_txt">Czerwony</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-sun"></i>
+                </span>
+            </button>
+            <button type="button" class="home_btn hb_yellow" onclick="YellowAccent()">
+                <span class="home_btn_txt">Żółty</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+            <button type="button" class="home_btn hb_green" onclick="GreenAccent()">
+                <span class="home_btn_txt">Zielony</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+            <button type="button" class="home_btn hb_blue" onclick="BlueAccent()">
+                <span class="home_btn_txt">Niebieski</span>
+                <span class="home_btn_icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+            <button type="button" class="home_btn hb_purple" onclick="PurpleAccent()">
+                <span class="home_btn_txt">Fioletowy</span>
                 <span class="home_btn_icon">
                     <i class="fas fa-moon"></i>
                 </span>
@@ -146,10 +179,10 @@
                 <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="link_b">Przycisk z Linku</a> </div>
                 <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="link_b">Przycisk z Linku</a> </div>
 
-                <div class="grid-item"><a href="https://github.com/BlyatTukan" class="btn btn1">Animowany Przycisk z Linku</a> </div>
-                <div class="grid-item"><a href="#portfolio" class="btn btn2">Animowany Przycisk z Linku</a> </div>
-                <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="btn btn3">Animowany Przycisk z Linku</a> </div>
-                <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="btn btn4">Animowany Przycisk z Linku</a> </div>
+                <div class="grid-item"><a href="https://github.com/BlyatTukan" class="btn btn1">Animowany</a></div>
+                <div class="grid-item"><a href="#portfolio" class="btn btn2">Animowany</a> </div>
+                <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="btn btn3">Animowany</a> </div>
+                <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="btn btn4">Animowany Przycisk</a> </div>
                 
                 <a href="https://github.com/BlyatTukan" style="padding: 0;"><img class="grid-item-img" src="images/github.png"></a>
                 <a href="#portfolio" style="padding: 0;"><img class="grid-item-img" src="images/portfolio.png"></a>
@@ -212,6 +245,13 @@
 
         </section>
 
+        <section class="zdjecia" id="zdjecia">
+            <hr><h1 class="title">Zdjecia</h1>
+            <h3 class="subtitle">Motyw Strony</h3>
+            <h4 class="date">07.11.2021</h4><hr>
+            
+        </section>
+
         <section class="footer" id="footer">
             <hr><h1 class="title">Footer</h1>
             <h3 class="subtitle">Koniec Strony</h3>
@@ -221,25 +261,54 @@
         </section>
 
         <script>
-            function LightModeOn() {
+            function LightMode() {
                 document.getElementById("mode-txt").innerText = "Aktywny Jasny Motyw";
-                let root = document.querySelector(":root");
-                root.style.setProperty("--bg-main", "#ddd");
-                root.style.setProperty("--bg-second", "#bbb");
-                root.style.setProperty("--accent", "#0093E9");
-                root.style.setProperty("--accent2", "#80D0C7");
-                root.style.setProperty("--txt-color", "#000");
-                root.style.setProperty("--txt-secound", "#333");
+                document.getElementById("html").classList.add("light-theme");
             }   
-            function DarkModeOn() {
+            function DarkMode() {
                 document.getElementById("mode-txt").innerText = "Aktywny Ciemny Motyw";
-                let root = document.querySelector(":root");
-                root.style.setProperty("--bg-main", "#222");
-                root.style.setProperty("--bg-second", "#444");
-                root.style.setProperty("--accent", "#32cd32");
-                root.style.setProperty("--accent2", "#0caf0c");
-                root.style.setProperty("--txt-color", "white");
-                root.style.setProperty("--txt-secound", "#bbb");
+                document.getElementById("html").classList.remove("light-theme");
+            }
+
+            function RedAccent() {
+                document.getElementById("accent-mode-txt").innerText = "Aktywny Czerwony Akcent";
+                document.getElementById("html").classList.add("red-accent");
+                document.getElementById("html").classList.remove("yellow-accent");
+                document.getElementById("html").classList.remove("green-accent");
+                document.getElementById("html").classList.remove("blue-accent");
+                document.getElementById("html").classList.remove("purple-accent");
+            }
+            function YellowAccent() {
+                document.getElementById("accent-mode-txt").innerText = "Aktywny Zółty Akcent";
+                document.getElementById("html").classList.remove("red-accent");
+                document.getElementById("html").classList.add("yellow-accent");
+                document.getElementById("html").classList.remove("green-accent");
+                document.getElementById("html").classList.remove("blue-accent");
+                document.getElementById("html").classList.remove("purple-accent");
+            }
+            function GreenAccent() {
+                document.getElementById("accent-mode-txt").innerText = "Aktywny Zielony Akcent";
+                document.getElementById("html").classList.remove("red-accent");
+                document.getElementById("html").classList.remove("yellow-accent");
+                document.getElementById("html").classList.add("green-accent");
+                document.getElementById("html").classList.remove("blue-accent");
+                document.getElementById("html").classList.remove("purple-accent");
+            }
+            function BlueAccent() {
+                document.getElementById("accent-mode-txt").innerText = "Aktywny Niebieski Akcent";
+                document.getElementById("html").classList.remove("red-accent");
+                document.getElementById("html").classList.remove("yellow-accent");
+                document.getElementById("html").classList.remove("green-accent");
+                document.getElementById("html").classList.add("blue-accent");
+                document.getElementById("html").classList.remove("purple-accent");
+            }
+            function PurpleAccent() {
+                document.getElementById("accent-mode-txt").innerText = "Aktywny Fioletowy Akcent";
+                document.getElementById("html").classList.remove("red-accent");
+                document.getElementById("html").classList.remove("yellow-accent");
+                document.getElementById("html").classList.remove("green-accent");
+                document.getElementById("html").classList.remove("blue-accent");
+                document.getElementById("html").classList.add("purple-accent");
             }
         </script>
     </body>

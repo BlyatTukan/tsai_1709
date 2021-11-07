@@ -20,6 +20,32 @@
     --gradient-btn3: linear-gradient(to left, #333399, #ff00cc);
     --gradient-btn4: linear-gradient(to left, #556270, #4ecdc4);
 }
+.light-theme{
+    --bg-main: #ddd;
+    --bg-second: #bbb;
+    --txt-color: #000;
+    --txt-secound: #333;
+}
+.green-accent{
+    --accent: #32cd32;
+    --accent2:#0caf0c;
+}
+.red-accent{
+    --accent: #cd3232;
+    --accent2:#af0c0c;
+}
+.yellow-accent{
+    --accent: #cdc332;
+    --accent2:#afac0c;
+}
+.blue-accent{
+    --accent: #32bbcd;
+    --accent2:#0c89af;
+}
+.purple-accent{
+    --accent: #8732cd;
+    --accent2:#660caf;
+}
 
 *{
     background: var(--bg-main);
@@ -155,6 +181,22 @@ a{
 }
 .hb_g{
     background: var(--github-btn);
+}
+
+.hb_red{
+    background: #cd3232;
+}
+.hb_yellow{
+    background: #cdc332;
+}
+.hb_green{
+    background: #32cd32;
+}
+.hb_blue{
+    background: #32bbcd;
+}
+.hb_purple{
+    background: #8732cd;
 }
 
 
