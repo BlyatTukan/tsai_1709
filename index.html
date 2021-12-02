@@ -9,24 +9,113 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/f914c1df03.js" crossorigin="anonymous"></script>
-        
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <section class="navbar">
-            <a class="active" href="#main"><i class="fa fa-fw fa-home"></i> Home</a> 
-            <a href="#lorem_ipsum"><i class="fa fa-fw fa-search"></i> Lorem Ipsum</a> 
-            <a href="#portfolio"><i class="fa fa-fw fa-envelope"></i> Portfolio</a> 
-            <a href="#colors"><i class="fa fa-fw fa-user"></i> Kolory HTML</a>
-            <a href="#kordian"><i class="fa fa-fw fa-user"></i> Kordian</a>
-            <a href="#zdjecia"><i class="fa fa-fw fa-envelope"></i> Zdjęcia</a>
-            <a href="#footer"><i class="fa fa-fw fa-user"></i> Stopka</a>
-        </section>
+        <div class="sidebar close">
+            <div class="logo-details">
+            <i class="fab fa-html5" onclick="SidebarFunction()"></i>
+            <span class="logo_name">PRACA NA T.S.A.I.</span>
+            </div>
+            <ul class="nav-links">
+            <li>
+                <a href="#main">
+                <i class="fas fa-home"></i>
+                <span class="link_name">Home</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#main">Home</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#lorem_ipsum">
+                <i class="fas fa-keyboard"></i>
+                <span class="link_name">Lorem Ipsum</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#lorem_ipsum">Lorem Ipsum</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#portfolio">
+                <i class="fas fa-users"></i>
+                <span class="link_name">Portfolio</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#portfolio">Portfolio</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                <a href="#colors">
+                    <i class="fas fa-border-style"></i>
+                    <span class="link_name">Style</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                <li><a class="link_name" href="#colors">Style</a></li>
+                <li><a href="#colors_title">Kolory w HTML</a></li>
+                <li><a href="#links_title">Linki i Odniesienia</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#kordian">
+                <i class="fas fa-quote-right"></i>
+                <span class="link_name">Kordian</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#kordian">Kordian</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                <a href="#zdjecia">
+                    <i class="fas fa-image"></i>
+                    <span class="link_name">Zdjęcia</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                <li><a class="link_name" href="#zdjecia">Zdjęcia</a></li>
+                <li><a href="#zdjecia">Zwykłe</a></li>
+                <li><a href="#image_mapa">Mapa</a></li>
+                <li><a href="#image_background">Zdjęcie w Tle</a></li>
+                <li><a href="#image_picture">&lt;picture&gt;</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#footer">
+                <i class="fas fa-shoe-prints"></i>
+                <span class="link_name">Footer</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#footer">Footer</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="profile-details">
+                <div class="profile-content">
+                    <img src="images/avatar.png" alt="Avatar">
+                </div>
+                <div class="name-job">
+                    <div class="profile_name">Rafał Durka</div>
+                    <div class="job">Game Developer</div>
+                </div>
+                <i class="fas fa-sign-out-alt"></i>
+                </div>
+            </li>
+        </ul>
+        </div>
+
+
+
 
         <section class="main" id="main">
-            <hr><h1 class="title">Home</h1>
-            <h3 class="subtitle">Motyw Strony</h3>
-            <h4 class="date">01.10.2021</h4><hr>
 
+            <h1 class="title">Home</h1>
+            <h3 class="subtitle">Motyw Strony</h3>
 
             <p id="mode-txt">Aktywny Ciemny Motyw</p>
             <button type="button" class="home_btn hb_lm" onclick="LightMode()">
@@ -73,13 +162,12 @@
                     <i class="fas fa-moon"></i>
                 </span>
             </button>
-            
+
         </section>
 
         <section class="lorem_ipsum" id="lorem_ipsum">
-            <hr><h1 class="title">Lorem Ipsum</h1>
+            <h1 class="title">Lorem Ipsum</h1>
             <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-            <h4 class="date">24.09.2021</h4><hr>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus vestibulum justo, ut rhoncus nisi venenatis in. Aliquam enim augue, feugiat eu risus egestas, dictum faucibus augue. Curabitur suscipit non mauris sed lacinia. Maecenas nisi sem, tincidunt vel odio eu, facilisis auctor nisi. Vivamus rhoncus tortor quis tempus pretium. Nulla mollis tristique tellus. Phasellus ultricies libero posuere accumsan accumsan. Phasellus euismod, justo placerat placerat vulputate, tortor tellus hendrerit sapien, sed vestibulum dui turpis vel libero. Duis scelerisque, est commodo dapibus aliquet, metus nunc scelerisque mauris, id commodo nulla sapien eu magna. Sed varius semper convallis. Fusce et arcu sit amet tortor volutpat tempor.<br><br>
                 In a gravida est. Donec leo enim, efficitur tincidunt auctor vitae, fermentum sit amet purus. Mauris eget tortor a elit pharetra ultricies in vitae nulla. Curabitur nec laoreet augue. Phasellus rhoncus dignissim nibh, ac tincidunt ligula rhoncus tincidunt. Ut sit amet erat orci. Cras lobortis lectus risus, id elementum diam elementum interdum. Aenean iaculis vel urna sit amet ultrices. Ut a laoreet nibh. Aenean nunc enim, egestas ut sem aliquam, eleifend tristique leo. Vivamus fermentum mauris eu justo interdum feugiat. Nullam in nisl porttitor, rhoncus mauris ut, aliquam arcu. Nunc quis pulvinar odio. Ut venenatis arcu vel ligula porttitor scelerisque.<br><br>
@@ -90,9 +178,8 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-            <hr><h1 class="title">Portfolio</h1>
+            <h1 class="title">Portfolio</h1>
             <h3 class="subtitle">Gry i nie tylko</h3>
-            <h4 class="date">01.10.2021</h4><hr>
 
             <a type="button" class="home_btn hb_pa" href="https://drive.google.com/file/d/1RCm4CL5uBDiJZE7AqhwR-W6qRNWNXynu/view?usp=sharing" target="_blank">
                 <span class="home_btn_txt">PROJECT AREA (Android)</span>
@@ -127,16 +214,15 @@
         </section>
 
         <section class="colors" id="colors">
-            <hr><h1 class="title">Kolory Tekstu i Linki</h1>
+            <h1 class="title">Kolory Tekstu i Linki</h1>
             <h3 class="subtitle">Zmiana Koloru Tła, tekstu itp.</h3>
-            <h4 class="date">24.09.2021 - 01.10.2021</h4><hr>
 
-            <h1 class="title">Kolory w HTML</h1>
+            <h1 class="title" id="colors_title">Kolory w HTML</h1>
 
             <div class="grid-container">
                 <div class="grid-item"><p>NAZWA</p></div>
                 <div class="grid-item"><p>RGB</p></div>
-                <div class="grid-item"><p>HEX</p></div>  
+                <div class="grid-item"><p>HEX</p></div>
                 <div class="grid-item"><p>HSL</p></div>
 
                 <div class="grid-item"><p style="background: orangered;">Tło<br>"Orage Red"</p></div>
@@ -156,12 +242,12 @@
 
             </div>
 
-            <h1 class="title">Linki i Odniesienia</h1>
+            <h1 class="title" id="links_title">Linki i Odniesienia</h1>
 
             <div class="grid-container">
                 <div class="grid-item"><p>ZWYKŁY<br>(GITHUB)</p></div>
                 <div class="grid-item"><p>DO ELEMENTU<br>(PORTFOLIO)</p></div>
-                <div class="grid-item"><p>NOWE OKNO<br>(TINY SLIME STUDIO)</p></div>  
+                <div class="grid-item"><p>NOWE OKNO<br>(TINY SLIME STUDIO)</p></div>
                 <div class="grid-item"><p>DO GRAFIKI<br>(PLACKI)</p></div>
 
                 <div class="grid-item"><a href="https://github.com/BlyatTukan">Bez Stylów</a> </div>
@@ -183,7 +269,7 @@
                 <div class="grid-item"><a href="#portfolio" class="btn btn2">Animowany</a> </div>
                 <div class="grid-item"><a href="https://blyattukan.github.io/company-page-temporal/" target="_blank" class="btn btn3">Animowany</a> </div>
                 <div class="grid-item"><a href="https://pliki.doradcasmaku.pl/placki-ziemniaczane-wg-magdy-gessler0-4.webp"  target="_blank" class="btn btn4">Animowany Przycisk</a> </div>
-                
+
                 <a href="https://github.com/BlyatTukan" style="padding: 0;"><img class="grid-item-img" src="images/github.png"></a>
                 <a href="#portfolio" style="padding: 0;"><img class="grid-item-img" src="images/portfolio.png"></a>
                 <a href="https://blyattukan.github.io/company-page-temporal/" target="_blank"  style="padding: 0;"><img class="grid-item-img" src="images/html.png"></a>
@@ -192,9 +278,8 @@
         </section>
 
         <section class="kordian" id="kordian">
-            <hr><h1 class="title">Kordian</h1>
+            <h1 class="title">Kordian</h1>
             <h3 class="subtitle">Fragment Książki "Kordian"</h3>
-            <h4 class="date">17.09.2021 - 24.09.2021</h4><hr>
 
 
                 <h2>CHÓR</h2>
@@ -241,30 +326,91 @@
                 <a id="106_O">[106]</a><span>Tella Szwajcara — chodzi tu o legendarnego bohatera szwajcarskiego, symbol niesubordynacji z pobudek patriotycznych wobec narzuconej władzy (w tym wypadku: władzy cesarza austriackiego). Tell wsławił się tym, że wystawiony na próbę strącił strzałą z łuku jabłko położone na głowie swego syna, nie czyniąc chłopcu krzywdy. Do tej legendy nawiązuje cała wypowiedź chóru. <i style="color: var(--txt-secound);">[przypis edytorski]</i></span><br><br>
                 <a href="#107_T" id="107_O">[107]</a><span>modlitwę rozbita — modlitwę rozbitka. <i style="color: var(--txt-secound);">[przypis edytorski]</i></span><br><br>
                 <a href="#108_T" id="108_O">[108]</a><span>sześciu żołnierzy przyprowadzają — dziś popr.: sześciu żołnierzy przyprowadza. <i style="color: var(--txt-secound);">[przypis edytorski]</i></span><br><br>
-                <a href="#109_T" id="109_O">[109]</a><span>wor (ros.) — złodziej. <i style="color: var(--txt-secound);">[przypis edytorski]</i></span><br> 
+                <a href="#109_T" id="109_O">[109]</a><span>wor (ros.) — złodziej. <i style="color: var(--txt-secound);">[przypis edytorski]</i></span><br>
 
         </section>
 
         <section class="zdjecia" id="zdjecia">
-            <hr><h1 class="title">Zdjecia</h1>
+            <h1 class="title">Zdjecia</h1>
             <h3 class="subtitle">Motyw Strony</h3>
-            <h4 class="date">07.11.2021</h4><hr>
-            
+
+
+            <div style="margin: 4rem 0;">
+                <h1 class="image-title">ZWYKŁY</h1>
+                <h2 class="image-description">BEZ KONTROLI</h2>
+            </div>
+            <div class="image-con">
+                <img src="images/html.png" alt="Obraz 1.1">
+            </div>
+
+            <div style="margin: 4rem 0;">
+                <h1 class="image-title">ZWYKŁY</h1>
+                <h2 class="image-description">853px x 480px</h2>
+            </div>
+            <div class="image-con">
+                <img src="images/html.png" alt="Obraz 1.1" class="image2">
+            </div>
+
+            <div style="margin: 4rem 0;">
+                <h1 class="image-title">ZWYKŁY</h1>
+                <h2 class="image-description">Proporcje 4:3</h2>
+            </div>
+            <div class="image-con">
+                <img src="images/html.png" alt="Obraz 1.1" class="image3">
+            </div>
+
+            <div style="margin: 4rem 0;" id="image_mapa">
+                <h1 class="image-title">MAPA</h1>
+                <h2 class="image-description">Bez Kontroli, 5 Elementów</h2>
+            </div>
+
+            <img src="https://i.imgur.com/d0E6bxc.png" usemap="#image-map" class="image4">
+
+            <map name="image-map">
+                <area target="_blank" alt="postac3" title="Losowo Wygenerowana Postać Nr. 3" href="link3" coords="436,716,428,700,441,689,443,643,443,609,450,601,453,551,446,523,464,490,505,447,506,432,512,371,498,359,494,343,506,333,508,297,500,290,523,242,592,193,631,190,648,200,664,187,669,176,685,183,699,191,730,217,741,296,773,336,763,356,729,333,740,366,748,425,774,455,811,488,822,505,818,539,831,674,840,685,843,719" shape="poly">
+                <area target="" alt="postac2" title="Losowo Wygenerowana Postać Nr. 2" href="Link2" coords="205,719,200,703,205,689,195,670,207,656,209,643,218,632,232,558,229,521,233,491,260,462,290,435,302,417,287,373,275,348,258,303,262,292,249,288,258,230,314,200,378,200,404,206,450,237,470,283,463,303,463,336,450,347,441,374,456,384,496,415,508,433,507,448,467,492,449,518,453,547,453,598,444,613,442,683,430,701,435,719" shape="poly">
+                <area target="" alt="postac1" title="Losowo Wygenerowana Postać Nr. 1" href="Link1" coords="36,716,45,655,71,629,83,514,87,478,78,455,106,438,101,430,106,411,82,361,84,323,67,286,86,258,113,245,137,256,198,250,244,239,248,286,258,309,296,408,285,436,230,486,233,559,216,624,207,636,208,650,194,669,200,686,197,708,203,720" shape="poly">
+                <area target="" alt="postac4" title="Losowo Wygenerowana Postać Nr. 4" href="Link4" coords="1080,719,1058,692,1064,679,1057,649,1054,621,1040,564,1036,495,1050,480,1007,437,983,429,976,417,987,408,980,364,995,362,994,337,985,334,985,315,998,310,996,286,983,252,959,244,946,212,902,190,854,191,796,238,797,296,795,315,801,351,819,386,808,388,799,429,764,440,814,490,821,506,832,671,841,686,845,719" shape="poly">
+                <area target="" alt="postac5" title="Losowo Wygenerowana Postać Nr. 5" href="Link5" coords="1227,715,1227,699,1221,647,1202,607,1195,537,1201,519,1194,506,1187,464,1195,458,1158,427,1125,405,1150,390,1164,353,1183,322,1173,312,1172,289,1176,272,1151,250,1140,221,1110,224,1094,217,1067,220,1028,213,993,249,988,264,1000,306,989,315,988,333,997,363,986,366,989,406,981,415,985,429,1012,438,1050,477,1039,496,1043,565,1068,676,1060,691,1091,720" shape="poly">
+            </map>
+
+            <div style="margin: 4rem 0;">
+                <h1 class="image-title">OBRAZ JAKO TŁO</h1>
+                <h2 class="image-description">Bez Kontroli, 5 Elementów</h2>
+            </div>
+            <div class="hero-image" id="image_background">
+                <div class="hero-text" style="background: transparent;">
+                    <h1 class="image-title">OBRAZ JAKO TŁO</h1>
+                    <h2 class="image-description">Pobieranie z Internetu</h2>
+                </div>
+              </div>
+
+              <div style="margin: 4rem 0;">
+                <h1 class="image-title">OBRAZ JAKO TŁO</h1>
+                <h2 class="image-description">Bez Kontroli, 5 Elementów</h2>
+                </div>
+              <picture class="image4" id="image_picture">
+                <source media="(max-width:480px)" srcset="images/200x600.png" class="image4">
+                <source media="(max-width:680px)" srcset="images/400x600.png" class="image4">
+                <source media="(max-width:880px)" srcset="images/600x600.png" class="image4">
+                <source media="(max-width:1280px)" srcset="images/800x600.png" class="image4">
+                <img src="images/1200x600.png" class="image169">
+              </picture>
+
+
         </section>
 
         <section class="footer" id="footer">
-            <hr><h1 class="title">Footer</h1>
+            <h1 class="title">Footer</h1>
             <h3 class="subtitle">Koniec Strony</h3>
-            <h4 class="date">24.09.2021</h4><hr>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus est, mollis id augue ut, sodales molestie sapien. Curabitur feugiat diam eu metus suscipit ultrices.</p>
         </section>
 
         <script>
             function LightMode() {
                 document.getElementById("mode-txt").innerText = "Aktywny Jasny Motyw";
                 document.getElementById("html").classList.add("light-theme");
-            }   
+            }
             function DarkMode() {
                 document.getElementById("mode-txt").innerText = "Aktywny Ciemny Motyw";
                 document.getElementById("html").classList.remove("light-theme");
@@ -309,6 +455,25 @@
                 document.getElementById("html").classList.remove("green-accent");
                 document.getElementById("html").classList.remove("blue-accent");
                 document.getElementById("html").classList.add("purple-accent");
+            }
+            function SidebarFunction() {
+              let sidebar = document.querySelector(".sidebar");
+              sidebar.classList.toggle("close");
+
+              var sections = document.getElementsByTagName('section');
+              for(var i = 0; i < sections.length; ++i) {
+                  sections[i].classList.toggle("close");
+              }
+            }
+
+
+
+            let arrow = document.querySelectorAll(".arrow");
+            for (var i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e)=>{
+            let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+            arrowParent.classList.toggle("showMenu");
+                });
             }
         </script>
     </body>
