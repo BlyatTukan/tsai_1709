@@ -10,17 +10,18 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/f914c1df03.js" crossorigin="anonymous"></script>
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
         <div class="sidebar close">
             <div class="logo-details">
-            <i class="fab fa-html5" onclick="SidebarFunction()"></i>
+            <img src="icons/laptop-coding.png" class="icon_img" onclick="SidebarFunction()">
             <span class="logo_name">PRACA NA T.S.A.I.</span>
             </div>
             <ul class="nav-links">
             <li>
                 <a href="#main">
-                <i class="fas fa-home"></i>
+                    <img src="icons/log-cabin.png" class="icon_img_sec">
                 <span class="link_name">Home</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -29,7 +30,7 @@
             </li>
             <li>
                 <a href="#lorem_ipsum">
-                <i class="fas fa-keyboard"></i>
+                <img src="icons/keyboard.png" class="icon_img_sec">
                 <span class="link_name">Lorem Ipsum</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -38,7 +39,7 @@
             </li>
             <li>
                 <a href="#portfolio">
-                <i class="fas fa-users"></i>
+                <img src="icons/popular-man.png" class="icon_img_sec">
                 <span class="link_name">Portfolio</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -48,7 +49,7 @@
             <li>
                 <div class="iocn-link">
                 <a href="#colors">
-                    <i class="fas fa-border-style"></i>
+                    <img src="icons/color-wheel.png" class="icon_img_sec">
                     <span class="link_name">Style</span>
                 </a>
                 <i class='bx bxs-chevron-down arrow' ></i>
@@ -61,7 +62,7 @@
             </li>
             <li>
                 <a href="#kordian">
-                <i class="fas fa-quote-right"></i>
+                    <img src="icons/quote.png" class="icon_img_sec">
                 <span class="link_name">Kordian</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -71,7 +72,7 @@
             <li>
                 <div class="iocn-link">
                 <a href="#zdjecia">
-                    <i class="fas fa-image"></i>
+                    <img src="icons/image.png" class="icon_img_sec">
                     <span class="link_name">Zdjęcia</span>
                 </a>
                 <i class='bx bxs-chevron-down arrow' ></i>
@@ -86,16 +87,29 @@
             </li>
             <li>
                 <a href="#frame">
-                <i class="fas fa-crop-alt"></i>
+                    <img src="icons/frame.png" class="icon_img_sec">
                 <span class="link_name">Strona w Stronie</span>
                 </a>
                 <ul class="sub-menu blank">
-                <li><a class="link_name" href="#frame">Strona w Stronie</a></li>
+                    <li>
+                        <a class="link_name" href="#frame">
+                            Strona w Stronie
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#table">
+                    <img src="icons/table.png" class="icon_img_sec">
+                <span class="link_name">Tabela</span>
+                </a>
+                <ul class="sub-menu blank">
+                <li><a class="link_name" href="#table">Tabela</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#footer">
-                <i class="fas fa-shoe-prints"></i>
+                    <img src="icons/laptop-coding.png" class="icon_img_sec">
                 <span class="link_name">Footer</span>
                 </a>
                 <ul class="sub-menu blank">
@@ -450,6 +464,370 @@
 
         </section>
 
+        <section class="table" id="table">
+            <h1 class="title">Tabelka</h1>
+            <h3 class="subtitle">Koniec Strony</h3>
+
+            <table style="width:100%" id="myTable">
+                <tr>
+                  <th style="background-color: var(--sidebar-sec);"  colspan="3">Dane Personalne</th>
+                  <th style="background-color: var(--sidebar-sec);"  colspan="2">Dane z Przychodni</th>
+                </tr>
+                <tr>
+                  <td onclick="sortTable(0)" style="background-color: var(--bg-main);" >IMIĘ</td>
+                  <td onclick="sortTable(1)" style="background-color: var(--bg-main);" >NAZWISKO</td>
+                  <td onclick="sortTable(2)" style="background-color: var(--bg-main);" >ADRES</td>
+                  <td onclick="sortTable(3)" style="background-color: var(--bg-main);" >LEKARZ RODZINNY</td>
+                  <td onclick="sortTable(4)" style="background-color: var(--bg-main);" >ID PACJENTA</td>
+                </tr>
+                <tr>
+                  <td>Garbiela</td>
+                  <td>Przybył</td>
+                  <td>ul. Niewaszasprawa 11</td>
+                  <td>33</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                    <td>Szymon</td>
+                    <td>Wilczyński</td>
+                    <td>ul. Wójtowska 3</td>
+                    <td>44</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>Kowalski</td>
+                    <td>ul. Pomorska 23</td>
+                    <td>32</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Ola</td>
+                    <td>Niewiadoma</td>
+                    <td>ul. Piasta 3</td>
+                    <td>23</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Tomasz</td>
+                    <td>Kot</td>
+                    <td>ul. Psia 34</td>
+                    <td>1</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Marcin</td>
+                    <td>Hyży</td>
+                    <td>ul. Wysockiego 5/1a</td>
+                    <td>44</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Elon</td>
+                    <td>Musk</td>
+                    <td>ul. Tesli 21</td>
+                    <td>52</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Zdzisław</td>
+                    <td>Niewidzialny</td>
+                    <td>ul. Niewidomych 1</td>
+                    <td>45</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Elvis</td>
+                    <td>Presley</td>
+                    <td>ul. Przejsciowa 8</td>
+                    <td>30</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Po</td>
+                    <td>Niedźwiedzki</td>
+                    <td>ul. Kilińska 2</td>
+                    <td>23</td>
+                    <td>7</td>
+                </tr>
+              </table>
+
+        </section>
+
+        <section class="starwars" id="starwars">
+            <h1 class="title">Star Wars</h1>
+            <h3 class="subtitle">Koniec Strony</h3>
+
+            <h1 class="title">Star Wars</h1>
+            <h3 class="subtitle">Lista Postaci</h3>
+            <dl>
+                <dt>Anakin Skywalker</dt>
+                <dd class="ddActor">Hayden Christensen, James Earl Jones, Jake Lloyd</dd>
+                <dd>Początkowo rycerz Jedi, pod wpływem Dartha Sidiousa przeszedł na ciemną stronę Mocy i przyjął tytuł „Darth Vader”. Doprowadził do zniszczenia zakonu Jedi i wspomógł przekształcanie Republiki w Imperium Galaktyczne.</dd>
+                <dt>Luke Skywalker</dt>
+                <dd class="ddActor">Mark Hamill</dd>
+                <dd>Luke Skywalker, to syn Anakina Skywalkera (Darth Vader) i Padmé Amidali (królowa i senator Naboo). Wychowywany przez Owena i Beru Larsów na farmie wilgoci na planecie Tatooine. W tajniki Mocy wprowadził go rycerz Jedi Obi-Wan Kenobi.</dd>
+                <dt>Han Solo</dt>
+                <dd class="ddActor">Harrison Ford</dd>
+                <dd>Han Solo, to mężczyzna z planety Korelia, który odegrał ważną rolę w końcowych zmaganiach Rebeliantów z Imperium. Jego statkiem był Sokół Millenium, na którym latał wraz ze swoim przyjacielem, Chewbaccą.</dd>
+                <dt>Obi-Wan Kenobi</dt>
+                <dd class="ddActor">Ewan McGregor, Alec Guiness</dd>
+                <dd>Obi-Wan Kenobi, to Jedi żyjący pod koniec istnienia Republiki i za czasów Rebelii. Mistrz Anakina Skywalkera i jego syna Luke'a Skywalkera. Uczeń Qui-Gon Jinna, nauczyciel Anakina Skywalkera, przyszłego Dartha Vadera. Zabił Dartha Maula oraz generała Grievousa. </dd>
+                <dt>Leia Organa</dt>
+                <dd class="ddActor">Carrie Fisher</dd>
+                <dd>Leia Organa (urodzona jako Leia Amidala Skywalker) – fikcyjna postać ze świata Gwiezdnych wojen, senator, córka Anakina Skywalkera (Dartha Vadera) i Padmé Amidali, siostra Luke’a Skywalkera.</dd>
+                <dt>Boba Fett</dt>
+                <dd class="ddActor">Mark Anthony Austin</dd>
+                <dd>Boba Fett jest niezmodyfikowanym klonem Jango Fetta, otrzymanym w ramach zapłaty za wykorzystanie genomu tego łowcy nagród przy tworzeniu armii klonów przez mieszkańców planety Kamino.</dd>
+                <dt>Chewbacca</dt>
+                <dd class="ddActor">Peter Mayhew</dd>
+                <dd>Chewbacca to Wookiee, syn Attichitcukalegendy. Pilotował Sokoła Millenium. Był najlepszym przyjacielem Hana Solo i jego drugim pilotem. Prze Hana nazywany był Chewie, a przez Leię na początku ich znajomości "Chodzący dywan".</dd>
+                <dt>Yoda</dt>
+                <dd class="ddActor">Frank Oz</dd>
+                <dd>Yoda, to Wielki mistrz Jedi pod koniec istnienia Republiki. Władał mieczem shoto, potocznie znanym jako krótki miecz świetlny o zielonym ostrzu. Walczył techniką Ataru przynależną do formy czwartej. Nic nie wiadomo o jego pochodzeniu i rasie. Yoda w części VI zmarł ze starości.</dd>
+              </dl>
+
+              <h1 class="title">Star Wars</h1>
+              <h3 class="subtitle">Główne Filmy Kinowe</h3>
+
+              <ol class="filmList" type="I">
+                  <li class="filmTitle">Mroczne Widmo
+                    <div>
+                        <p>19 V 1999 | George Lucas | 2g 16m</p>
+                        <button id="ST_B_1" type="button" class="home_btn hb_warning" onclick="StarWars1()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_1" style="display: none;">
+                        <li>Federacja Handlowa rozpoczęła blokadę planety Naboo. Mistrz zakonu Jedi – Qui-Gon Jinn i jego uczeń-padawan, Obi-Wan Kenobi otrzymują nakaz rozwiązania konfliktu. Jednak federacja zawarła przymierze z tajemniczym Darthem Sidiousem i otrzymuje od niego nakaz zamordowania Jedi. Ci jednak pokonują przeciwników. Lądują na Naboo, gdzie, uciekając przed wojskami federacji Qui-Gon, ratują od śmierci Jar Jar Binksa – niezdarnego Gunganina skazanego na wygnanie. Ten prowadzi ich do swojego podwodnego plemienia, które Jedi mają nadzieję przekonać by współpracowali z innymi mieszkańcami planety i odparli Federację. Jednak Gunganie nie są pokojowo nastawieni, nie lubią przedstawicieli innych gatunków, którzy od lat okazywali im pogardę. Jedi wraz z Jar Jarem odpływają podarowanym przez Gungan statkiem. Zostają zaatakowani przez dwa morskie potwory, jednak oba zabija olbrzymi potwór Sando. Docierają do pałacu czternastoletniej królowej Naboo – Padmé Amidali, która dostawszy się do niewoli ma zostać zmuszona do podpisania paktu legalizującego inwazję. W porę zostaje jednak ewakuowana przez Jedi.</li>
+                        <li>Niestety podczas ucieczki z planety ich statek kosmiczny został uszkodzony przez droidy. R2-D2 naprawił szkodę, jednak załoga zmuszona została do awaryjnego lądowania na pustynnej planecie Tatooine. Okazało się, iż potrzebna jest wymiana części w maszynie. Qui-Gon, Padmé, Jar Jar i ich droid naprawczy R2-D2 dotarli do kosmoportu Mos Espa, gdzie spotkali handlarza Watto. Jego dziesięcioletni niewolnik – Anakin Skywalker, zaprosił ich do swojego domu. Szybko zakochał się w królowej. Z kolei R2-D2 zaprzyjaźnił się z droidem chłopca – C-3PO. Qui-Gon wyczuł w chłopcu wielką Moc, tą samą, którą posiadają rycerze Jedi. Mistrz zbadał próbkę krwi młodego Anakina. Wyniki wykazały, że w krwi chłopca znajdują się midichloriany – mikrokomórki, które sprawiają, że ich posiadacz jest „wrażliwy na Moc” i może się nią posługiwać. Ich liczba w organizmie tego młodego niewolnika jest większa niż w organizmie najpotężniejszego mistrza Jedi – Yody. Gdy Qui-Gon zapytał matkę Skywalkera – Shmi Skywalker, kto jest ojcem chłopca – ta odpowiedziała, że nie było żadnego ojca. Jak się później okazało – to nie żaden mężczyzna począł Anakina, lecz zrobiły to wcześniej wspomniane midichloriany. Qui-Gon wpadł na pomysł, by przedstawić chłopaka Radzie Jedi. Wpierw należało jednak naprawić statek, na co załoga nie miała pieniędzy. Skywalker zaoferował pomoc – ma zamiar ukończyć budowę swojego pojazdu i wystąpić w kosmicznym wyścigu, w którym dozwolone są wszystkie nieczyste zagrania, a nagrodą jest wielka kwota. Qui-Gon zakłada się z Watto, że chłopiec wygra wyścig a ten w zamian zwróci mu wolność. Ku zaskoczeniu wszystkich Anakin wygrywa wyścig (w tej scenie pojawiają się także Huttyjski gangster Jabba oraz Tuskeni) eliminując swojego najgroźniejszego rywala, będącego faworytem, wyjątkowo nieuczciwego Duga Sebulbę.</li>
+                        <li>Anakinowi zostaje zwrócona wolność, jednak musi zostawić na planecie matkę. Przy odlocie z planety Qui-Gon zostaje zaatakowany przez potężnego Lorda Sithów – Dartha Maula, ucznia Dartha Sidiousa, udaje mu się jednak uciec. Jedi zabierają chłopca na planetę Coruscant, gdzie przedstawiają go Radzie. Członkowie Rady m.in. Mistrz Yoda i Mace Windu jednak nie zgadzają się na szkolenie chłopca. Za argument podają, iż nie jest już wystarczająco młody, by rozpocząć szkolenie – zasady nie pozwalają bowiem na szkolenie kogoś, kto ma więcej niż pięć lat. Dodatkowo Yoda wyczuwa w Anakinie strach, będący skutkiem rozstania z matką, który może przeciągnąć go na Ciemną Stronę Mocy. Qui-Gon oferuje, iż może sam przyjąć go na szkolenie oraz oświadcza Radzie, że Obi-Wan może już przejść próby Jedi.</li>
+                        <li>Qui-Gon wraz z Obi-Wanem, Jar Jarem, Padmé i Anakinem udają się na Naboo, gdzie królowa pokornie prosi o przymierze Gungan. Ci zgadzają się. W zamian za pojednanie Gungan i poddanych Amidali, Jar Jar zostaje mianowany Generałem. Armia Gungańska toczy bitwę z Droidami, podczas gdy mała grupa dywersyjna złożona z Jedi, Królowej, kilku jej służących i Anakina wdziera się do pałacu, gdzie mają pojmać wicekróla federacji. Na drodze staje im Darth Maul, którym Qui-Gon i Obi-Wan postanawiają się zająć. Młody Anakin oddziela się od grupy, zasiada za sterami myśliwca „N-1” i niszczy stację dowodzenia droidów, co przeważa nad przebiegiem bitwy, ponieważ wszystkie droidy zostają wyłączone. Wicekról zostaje pojmany, a w tym samym czasie Qui-Gon Jinn i Obi-Wan Kenobi staczają walkę na miecze świetlne z Darthem Maulem. Po chwili Kenobi zostaje odłączony od swojego mistrza i zmuszony jest obserwować jak wróg przebija ciało mistrza mieczem świetlnym. Młody Obi-Wan powraca do walki, ale Maul zrzuca go do otchłani. Kenobi traci miecz i desperacko chwyta się stromej ściany. Po chwili wyskakuje z otchłani, za pomocą mocy chwytając w locie miecz swego mistrza i po krótkiej walce zabija przeciwnika. Przed śmiercią Qui-Gon prosi Obi-Wana, by wyszkolił Anakina na rycerza Jedi. Rada spełnia jego ostatnią prośbę. Odbywa się pogrzeb Qui-Gona, w którym uczestniczą m.in. Rada Jedi, Obi-Wan, Anakin, Amidala i Palpatine. Wszyscy dowiadują się o nowym zagrożeniu – Sithach, którzy jak sądzili, dawno wyginęli. Senator Palpatine został wybrany na nowego Wielkiego Kanclerza Republiki. Amidala zostaje wybrana senatorem na jego miejsce. Obi-Wan Kenobi uzyskuje status rycerza Jedi. Wszystko kończy się uroczystą paradą w sercu stolicy Naboo, z okazji zwycięstwa i pojednania z rdzennym ludem planety – Gunganami.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Atak Klonów
+                    <div>
+                        <p>16 V 2002 | George Lucas | 2g 22m</p>
+                        <button id="ST_B_2" type="button" class="home_btn hb_warning" onclick="StarWars2()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_2" style="display: none;">
+                        <li>Minęło 10 lat od śmierci Qui-Gona. Obi-Wan jest rycerzem Jedi, a dziewiętnastoletni Anakin jest jego padawanem. Chłopak właśnie wraca ze swej pierwszej misji i dowiaduje się, że na Coruscant przybywa Padmé Amidala – miłość Anakina z czasów niewolnictwa, dawna królowa Naboo, pełniąca obecnie rolę senatora swej planety. Dochodzi do nieudanego zamachu na Padmé. Po pościgu Anakin i Obi-Wan demaskują napastniczkę o imieniu Zam Wesell; ta jednak umiera trafiona zatrutą strzałą, przed wyjawieniem, kto ją wynajął. Anakin dostaje misję ochrony senator Amidali w drodze na Naboo i szybko odlatuje razem z nią. Obi-Wan z kolei postanawia odnaleźć zabójcę zamachowca Padmé. Jedyną poszlaką jest zatruta strzałka, która pochodzi z planety Kamino. Jedi udaje się tam i uzyskuje informację, że nieżyjący obecnie rycerz Jedi – Sifo-Dyas przed wieloma laty zamówił u mieszkańców tej planety armię klonów. O przedsięwzięciu nie wiedział nikt poza nim. Gdy Obi-Wan informuje o tym Yodę, ten postanawia użyć armii w obronie przed droidami.</li>
+                        <li>W tym samym czasie na Naboo rośnie miłość Padmé i Anakina, mimo iż związek nie ma przyszłości (Jedi nie mogą wchodzić w żadne związki uczuciowe z żadną żywą istotą). Po kilku tygodniach Skywalker ma wizję, w której widzi śmierć swojej matki, więc czym prędzej udaje się na Tatooine, by sprawdzić sytuację. Okazuje się, że Shmi jest teraz w niewoli u Tuskenów – dzikich ludzi pustyni. Anakin odnajduje ich wioskę, gdzie widzi torturowaną matkę. Po chwili kobieta umiera w ramionach syna, który ze wściekłości morduje mieczem świetlnym wszystkich mieszkańców wioski, wliczając w to kobiety i dzieci.</li>
+                        <li>Kenobi ścigał pracodawcę zamachowcy Padmé – Jango Fetta i leci za nim na planetę Geonosis. Odkrywa, że znajduje się tam baza separatystów, dowodzonych przez Mrocznego Jedi – Hrabiego Dooku (dla którego pracuje Fett). Kenobi informuje o tym Anakina, a ten z kolei powiadamia Radę Jedi. Obi-Wan jednak podczas rozmowy ze swym uczniem zostaje porwany. Skywalker i Amidala ruszają mu na ratunek, lecz również zostają porwani. Dooku decyduje się na publiczną egzekucję tej dwójki oraz Kenobiego. Zostali oni przywiązani do gigantycznych słupów i gdy mieli już zginąć zabici przez dzikie zwierzęta, na arenę przybyło dwustu dwunastu rycerzy Jedi, dowodzonych przez mistrza Windu. Korzystając z zamieszania więźniowie wspięli się na szczyt słupów, po czym ześlizgując się zeszli na ziemię i uwolnili się z łańcuchów. Po krwawej walce z droidami przy życiu zostało tylko kilkunastu Jedi, w tym Obi-Wan, Anakin i Windu oraz Padmé. Zginął także Jango Fett z rąk Windu. Jego śmierć z ukrycia widzi jego, wychowany jako syn, niezmodyfikowany klon – Boba.</li>
+                        <li>Gdy sytuacja stawała się dramatyczna, z odsieczą przybyło kilka republikańskich kanonierek z armią klonów i mistrzem Yodą na ich czele. Rozpoczęła się bitwa o Geonosis. Anakin i Obi-Wan podążyli za uciekającym hrabią Dooku do hangaru, gdzie stoczyli z nim walkę na miecze świetlne. Kenobi doznał ciężkich obrażeń i nie mógł kontynuować walki. W jego obronie stanął młody Skywalker, któremu po długiej walce Dooku odciął prawą rękę. Niezdolnego do walki Anakina uratował Yoda, któremu przeciwnik uciekł po krótkiej walce.</li>
+                        <li>Skywalkerowi podłączono biomechaniczną rękę ze stali i pasowano na rycerza Jedi, a Obi-Wan trafił na leczenie i dostał tytuł mistrza. Dooku z kolei przybył na Coruscant, gdzie spotkał się ze swym mistrzem – najpotężniejszym żyjącym Mrocznym Jedi – Darthem Sidiousem, zwanym też Lordem Sithów. Hrabia oznajmia mu, iż rozpoczęły się wojny klonów, co było częścią wielkiego planu Sidiousa. Setki tysięcy żołnierzy-klonów przygotowuje się do odlotu na wojnę. Z kolei na spokojnej planecie Naboo Padmé i Anakin potajemnie biorą ślub.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Zemsta Sithów
+                    <div>
+                        <p>19 V 2005 | George Lucas | 2g 20m</p>
+                        <button id="ST_B_3" type="button" class="home_btn hb_warning" onclick="StarWars3()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_3" style="display: none;">
+                        <li>Wojny klonów trwają już trzy lata. Separatyści, dowodzeni przez Lorda Sithów hrabiego Dooku, porwali kanclerza Palpatine’a. Na ratunek ruszają dwaj rycerze Jedi: mistrz Obi-Wan Kenobi i jego przyjaciel oraz uczeń – Anakin Skywalker. Dostają się na pokład okrętu, na którym przetrzymywany jest kanclerz, ale wpadają w pułapkę. Kenobi zostaje ogłuszony w walce z hrabią Dooku, ale Skywalker zwycięża i namawiany przez kanclerza zabija pokonanego i bezbronnego Dooku, co jest sprzeczne z zasadami Jedi. Podczas walki na statku ucieka jednak inny groźny przeciwnik – cyborg generał Grievous, który przejmuje dowództwo nad armią separatystów.</li>
+                        <li>Ocalony z opresji kanclerz Palpatine domaga się większych uprawnień. Niepokoi to rycerzy Jedi. Tymczasem kanclerz umieszcza w Radzie Jedi młodego Skywalkera jako swojego przedstawiciela. Jedi się godzą, ale nie dają Skywalkerowi tytułu mistrza. Chcą też, by donosił im o posunięciach kanclerza. Decyzje Rady wzbudzają nieufność u Skywalkera. Młody Jedi dowiaduje się też, że jego żona Padmé jest w ciąży. Anakina nęka koszmar, w którym widzi, jak jego ukochana umiera podczas porodu.</li>
+                        <li>Wkrótce potem mistrz Yoda udaje się z batalionem klonów na Kashyyyk, planetę Wookieech, którą zaatakowały droidy Grievousa. Sam generał zostaje zlokalizowany przez wywiad Republiki na odległej niezależnej planecie Utapau. Rada Jedi wysyła tam Kenobiego z oddziałem klonów. Decyzja ta wzbudza gniew Skywalkera, któremu kanclerz powiedział wcześniej, że na pewno tę niebezpieczną misję Rada powierzy właśnie jemu. Skywalker jest przekonany, że Rada mu nie ufa i odsuwa go od swoich działań.</li>
+                        <li>Podczas przedstawienia w operze kanclerz opowiada Skywalkerowi historię o najpotężniejszym z Sithów Darcie Plagueisie, który zapanował nad śmiercią. Ciągle nękany koszmarami Skywalker, zaczyna marzyć o uzyskaniu takiej mocy. Podczas kolejnej rozmowy z kanclerzem Skywalker domyśla się, że to właśnie on jest Darthem Sidiousem, lordem Sithów, który stoi za rebelią. W tym samym czasie Kenobi zabija generała Grievousa po długim pościgu.</li>
+                        <li>Skywalker wyznaje mistrzowi Mace Windu z Rady Jedi, kim naprawdę jest kanclerz, a tamten postanawia go aresztować i wyrusza do niego wraz z trojgiem innych Jedi. Palpatine zabija w początkowej fazie walki wszystkich oprócz Windu, który go pokonuje. Mistrz Jedi zabiłby kanclerza, gdyby nie interwencja Skywalkera, który się boi, że bez pomocy znającego Ciemną Stronę Mocy Palpatine’a Padmé umrze. Odcina więc Windu dłoń, a kanclerz dobija mistrza. Skywalker składa pokłon Sidiousowi, przechodzi na Ciemną Stronę Mocy i staje się Darthem Vaderem, uczniem Dartha Sidiousa.</li>
+                        <li>Na rozkaz Sidiousa, Vader atakuje na czele Legionu 501 Świątynię Jedi na Coruscant i zabija wszystkich znajdujących się tam mistrzów, rycerzy, padawanów oraz młodziutkich uczniów. Kanclerz wydaje klonom Rozkaz 66 – polecenie zabicia wszystkich Jedi. Dowodzący rozrzuconymi po całej galaktyce oddziałami klonów Jedi giną z rąk swoich podkomendnych. Jedynie nieliczni z nich uchodzą cało z masakry.</li>
+                        <li>Kanclerz wykorzystuje okoliczności aresztowania i mówi w senacie, że Jedi próbowali go zamordować. Bez trudu przekonuje senatorów do idei przekształcenia Republiki w Imperium Galaktyczne z nim jako imperatorem. Kenobi i Yoda z pomocą senatora Baila Organy dostają się na Coruscant. Tam dowiadują się prawdy o Skywalkerze. Postanawiają, że musi zginąć. Kenobi udaje się do Padmé. Ta nie zdradza mu, gdzie jest jej ukochany, ale wkrótce wyrusza na wulkaniczną planetę Mustafar, gdzie Sidious wysłał Vadera, by ten zlikwidował niepotrzebnych mu już przywódców separatystów i tym samym zakończył wojnę. Kenobi niezauważony przez Padmé wsiada na jej statek. Yoda zaś ponosi porażkę w walce z Darthem Sidiousem. Po zażartej walce uznaje się za pokonanego i opuszcza Coruscant z senatorem Organą.</li>
+                        <li>Kenobi i Padmé lądują na Mustafar, gdzie spotykają Vadera. Ten, przekonany, że żona go zdradziła, w napadzie szału zaczyna ją dusić, używając Mocy. Padmé pada nieprzytomna. Wywiązuje się walka między Kenobim a jego uczniem. Po bardzo długiej walce Vader przegrywa i traci lewą rękę oraz obie nogi. Kenobi zostawia go ciężko rannego i palącego się na brzegu rzeki lawy. Kenobi dociera z nieprzytomną Padmé na pokład Tantive IV, gdzie znajdują się już Yoda i Bail Organa. Udają się z chorą do centrum medycznego w pasie asteroid Polis Massa. Tam Padmé umiera podczas porodu. Uratowanym dzieciom przed śmiercią nadaje jeszcze imiona – Luke i Leia.</li>
+                        <li>Ciężko rannego i mocno poparzonego na całym ciele Skywalkera-Vadera znajduje Darth Sidious. Po ciężkiej operacji Vader wraca do służby u boku swojego nowego mistrza z protezami zamiast kończyn i z twarzą zakrytą maską. Padmé zostaje pochowana na swojej ojczystej planecie Naboo, w rękach ma naszyjnik, który otrzymała od Anakina Skywalkera kilkanaście lat temu. Bail Organa zabiera córkę Skywalkera do siebie na Alderaan. Luke trafia do swojego wujostwa na Tatooine, gdzie ma dorastać pod ich czujnym okiem. Obi-Wan Kenobi postanawia ukryć się na Tatooine, gdzie będzie mógł pilnować Luke’a i szkolić się u boku swojego dawnego mistrza Qui-Gona, który wrócił z zaświatów Mocy.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Nowa Nadzieja
+                    <div>
+                        <p>25 V 1977 | George Lucas | 2g 1m</p>
+                        <button id="ST_B_4" type="button" class="home_btn hb_warning" onclick="StarWars4()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_4" style="display: none;">
+                        <li>Darth Vader wraz ze szturmowcami wdziera się na pokład statku i porywa księżniczkę Leię, która wcześniej jednak przekazuje plany dwóm droidom – R2-D2 i C-3PO. Roboty uciekają za pomocą kapsuły na pustynną planetę Tatooine. Szturmowcy uważają, że była to awaria i nie strzelają do niej. Gdy roboty lądują na niej okazuje się, że zostali porwani przez Jawów.</li>
+                        <li>Na Tatooine, młody farmer – Luke Skywalker wybiera się wraz z wujem Owenem Larsem na wyprzedaż, gdzie dokonuje zakupu R2-D2 i C-3PO. Podczas jednej z napraw R2-D2, okazuje się, że robot zawiera w sobie wiadomość od księżniczki, w której prosi ona niejakiego Obi-Wana Kenobiego o pomoc. Skywalker postanawia go odnaleźć, lecz wuj sprzeciwia się. W pewnym momencie okazuje się, że R2-D2 uciekł. Luke i C-3PO ruszają jego tropem, lecz gdy go znajdują, zostają zaatakowani przez Ludzi Pustyni. Z sytuacji wybawia ich Ben Kenobi – w rzeczywistości Obi-Wan Kenobi, rycerz Jedi – i zabiera chłopaka i droidy do swego domu. Podczas rozmowy starzec mówi Luke’owi, że jego ojciec był wielkim Jedi, lecz został pokonany przez Lorda Vadera – byłego ucznia Obi-Wana. Przekazuje mu także miecz świetlny i wyjawia, że istnieje Moc – pole energii spajające cały wszechświat. Kenobi proponuje chłopakowi udział w wyprawie, jednak ten uznaje, że jest potrzebny do pracy w domu. Gdy wraca, zastaje zniszczoną farmę i dom oraz spalone ciała wujostwa, zabitych przez szturmowców. Chłopak uznaje, że nic go już nie trzyma na farmie.</li>
+                        <li>Ben, Luke i droidy udają się do kantyny w Mos Eisley w poszukiwaniu pilota. Po krótkiej kłótni, w wyniku której Kenobi odcina pewnemu kosmicie rękę mieczem świetlnym, odnajdują przemytników – Hana Solo oraz jego kompana, Wookie’ego imieniem Chewbacca. Proponują im wysokie wynagrodzenie za przewóz. Han jest w sporze z potężnym Huttyjskim gangsterem Jabbą, któremu jest winny sporą sumę kredytów galaktycznych, przez co ten jest gotów wiele zapłacić za jego życie. Tuż po wyjściu Luke’a i Bena zabija łowcę nagród – rodianina Greedo, który chce zdobyć nagrodę za pozbycie się Solo. Według planu Luke, Han, Ben i Chewbacca lecą na Alderaan. Podczas podróży Ben uczy Skywalkera posługiwania się Mocą oraz sztuki Jedi.</li>
+                        <li>W międzyczasie na Gwieździe Śmierci księżniczka jest torturowana przez Dartha Vadera, który usiłuje wyciągnąć z niej informacje na temat położenia tajnej bazy rebeliantów. Ponieważ tortury nie dają rezultatów, wielki moff Wilhuff Tarkin szantażuje Leię groźbą użycia mocy Gwiazdy Śmierci na jej rodzimej planecie, Alderaanie. Leia kłamie, że baza znajduje się na Dantooine, nie powstrzymuje to jednak Tarkina przed zniszczeniem Alderaanu. W tym samym momencie Kenobi mówi, iż odczuł zaburzenie w Mocy, „coś, jakby ból miliardów istot”. Gdy docierają na miejsce, odkrywają, że planeta została zniszczona. Wkrótce Gwiazda Śmierci wciąga ich do swojego wnętrza za pomocą promieni ściągających i blokuje wyjście polem ochronnym.</li>
+                        <li>Luke, Han i Chewbacca ruszają uwolnić Leię, a droidy w obawie o swoje bezpieczeństwo przemieszczają się po stacji. Ben natomiast idzie wyłączyć pole ochronne, by ich statek – Sokół Millennium mógł odlecieć. Wyłącza pole i natrafia na Lorda Vadera, z którym wdaje się w pojedynek na miecze świetlne. Solo, Skywalker i Wookie odnajdują księżniczkę. Trafiają do zsypu na śmieci, gdzie mają zostać zgnieceni. W porę jednak ratuje ich R2-D2. Następnie natykają się na walczących ze sobą Bena i Vadera. Kenobi również ich zauważa i z rozmysłem opuszcza miecz, a gdy Sith zadaje cios, ciało Jedi znika. Czwórka bohaterów odlatuje do bazy rebeliantów, lecz jest śledzona i Gwiazda Śmierci przylatuje, by ją zniszczyć.</li>
+                        <li>Dzięki planom rebelianci mogą się jednak obronić – grupa pilotów (w tym Luke) w myśliwcach X-wing ma wykorzystać słaby punkt Gwiazdy Śmierci – niewielki szyb wentylacyjny. Przed odlotem Skywalker kłóci się z Hanem, który, dostawszy pieniądze, nie chce ryzykować życia. Rozpoczyna się bitwa o Yavin, w której biorą udział 3 eskadry Rebelii i myśliwce Imperium, gdyż lasery Gwiazdy nie są w stanie trafić w małe maszyny rebelii. W pewnej chwili do walki przyłącza się Darth Vader, będący świetnym pilotem. Po długiej, zaciętej bitwie Luke zostaje jednym z trzech żywych pilotów (obok Biggsa Darklightera i Wedge Antillesa). Przed śmiercią ocala ich zreflektowany Han Solo, który niszczy myśliwce Imperium. Luke słyszy głos Bena, który każe mu użyć Mocy i oczyścić umysł. przy oddawaniu strzału. Skywalker tak też robi i oddaje celny strzał niszcząc stację kosmiczną z Tarkinem na pokładzie. Lord Vader ucieka, a Luke i Han zostają bohaterami Rebelii.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Imperium Kontratakuje
+                    <div>
+                        <p>21 V 1980 | Irvin Kenshner | 2g 4m</p>
+                        <button id="ST_B_5" type="button" class="home_btn hb_warning" onclick="StarWars5()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_5" style="display: none;">
+                        <li>Jest rok 3 ABY, czyli trzy lata po bitwie o Yavin (After Battle of Yavin). Lord Vader otrzymuje od Imperatora rozkaz odnalezienia dwudziestodwuletniego Luke’a Skywalkera, który trzy lata wcześniej zniszczył Gwiazdę Śmierci, i przeciągnięcia go na Ciemną Stronę Mocy. Vader wysyła sondy kosmiczne we wszystkie zakątki galaktyki.</li>
+                        <li>Tymczasem rebelianci ukrywają się w tajnej bazie na śnieżnej planecie Hoth. Księżniczka Leia wyrzuca Hanowi Solo, że decyduje się opuścić rebeliantów, by spłacić dług u Jabby. Będący już padawanem Jedi, komandor Luke Skywalker patroluje teren na swoim tauntaunie, gdy nagle zauważa – jak mniema – meteor, który uderza o śnieg. W rzeczywistości jest to sonda Imperium. Skywalker postanawia to sprawdzić, lecz zostaje napadnięty przez wampę – śniegowego stwora, który zabiera go do swej jaskini. Kapitan Han Solo natomiast, zauważając, że jego przyjaciel nie wraca i nie odpowiada na sygnał, rusza na poszukiwania.</li>
+                        <li>Tymczasem Luke odzyskuje przytomność wisząc do góry nogami. Jego niebieski miecz świetlny leży na śniegu. Używając Mocy chłopak przyciąga do siebie miecz, uwalnia się, a następnie odcina potworowi rękę i ucieka. Idąc przez śnieżną zawieruchę Skywalker upada z powodu wychłodzenia. Ukazuje mu się duch Bena Kenobiego, który każe mu lecieć na Dagobah, w celu kontynuowania szkolenia Jedi u mistrza Yody. Luke’a odnajduje Han, który wycina w brzuchu swojego martwego tauntauna dziurę, do której wkłada Luke’a, tym samym ratując mu życie.</li>
+                        <li>Dzięki sondzie, Imperium odkrywa bazę rebeliantów i atakuje ją. Rozpoczyna się Bitwa o Hoth, w której Imperium stosuje potężne maszyny kroczące. Luke Skywalker bierze udział w bitwie. Han i Chewbacca zabierają Leię i C-3PO w bezpieczne miejsce. Statek Imperium rusza za nimi. Baza Echo na Hoth zostaje zniszczona, a Luke wraz z R2-D2 leci na Dagobah.</li>
+                        <li>TIE-myśliwce ścigają Sokoła Millenium, jednak te zwodzone przez statek Hana Solo zostają zniszczone przez asteroidy. Przemytnik w końcu chowa swój statek w kraterze jednej z asteroid. Okazuje się, że wylądowali w żołądku żyjącego na asteroidzie olbrzymiego potwora nazywanego exogorthem. Wszyscy uciekają do miasta w chmurach na Bespinie, gdzie zarządza stary przyjaciel Hana – Lando Calrissian. Okazuje się jednak, że Darth Vader już wcześniej przybył do Lando i zmusił go do wybierania pomiędzy nimi, a dobrem mieszkańców Bespin. Vader, wiedząc, że Luke przybędzie na ratunek przyjaciołom, postanawia tu na niego zaczekać, używając Lei, Hana i Chewbacci jako przynęty. Han Solo zostaje zamrożony w karbonicie i ma zostać wysłany do Jabby Hutta. Tuż przed tym Leia mówi Hanowi, że go kocha, na co ten odpowiada: „Wiem”. Okazuje się, że Han przeżył zamrożenie.</li>
+                        <li>Tymczasem Luke wraz z R2-D2 trafia na bagnistą planetę Dagobah, gdzie odnajduje Yodę. Yoda, mimo pewnych oporów, zostaje przekonany przez ducha Obi Wana Kenobiego i rozpoczyna szkolenie Luke’a. Uczy go jak korzystać z Mocy. Przekonuje Luke’a, że żeby coś musiało się udać trzeba uwierzyć w to, że to się uda (zrezygnowanemu Luke’owi nie udaje się wyciągnąć X-winga z bagna, co Yoda czyni bez problemu). Jednym z ćwiczeń jest wejście do ciemnej jaskini, gdzie Luke ma za zadanie zmierzyć się z własnymi lękami (ukazuje mu się Darth Vader, którego Luke pokonuje, po czym spostrzega, że pod maską jest jego własna twarz). W końcu Luke wyczuwa, że coś złego może stać się jego przyjaciołom, więc on też rusza do Bespin, by ich uratować.</li>
+                        <li>Na miejscu spotyka Bobę Fetta – syna Jango Fetta, łowcę nagród wysłanego przez Jabbę w pogoń za Hanem Solo. Rozpoczyna z nim wymianę ognia. Po chwili młody Jedi wchodzi w głąb konstrukcji, gdzie spotyka Vadera. Obydwaj uruchamiają swoje miecze świetlne i rozpoczynają walkę. Vader podsyca nienawiść w Skywalkerze, mówiąc mu, żeby czerpał z niej siłę. W końcu Luke spycha Lorda Sithów na niższy poziom komory, jednak ten po chwili wydostaje się z ukrycia i ciska w młodzieńca różne przedmioty, używając w tym celu Mocy. Luke traci prawą rękę w przedramieniu, a Vader próbuje przeciągnąć go na ciemną stronę Mocy. Oznajmia mu, że wcale nie zabił jego ojca, gdyż to on jest tym ojcem.</li>
+                        <li>Leia, Chewbacca i droidy, prowadzeni przez szturmowców, zostają uratowani przez Lando. Grupa rusza w pościg za Fettem, który prowadzi zamrożonego Hana Solo, jednak ten ucieka z łupem. Wraz z pomocą Lando bohaterowie uciekają z miasta Sokołem Millenium.</li>
+                        <li>Tymczasem Vader kusi Luke’a wizją wspólnego rządzenia Galaktyką i obaleniem Imperatora Palpatine’a. Zdesperowany Skywalker ryzykuje i skacze w głąb otchłani. Kanałami ześlizguje się w dół, aż w końcu chwyta się anteny, znajdującej się pod miastem i używając Mocy wzywa Leię. Ta zawraca statek i zabiera osłabionego Luke’a. Zostaje mu podłączony bio-mechaniczny implant ręki. Równocześnie wciąż za pomocą Mocy porozumiewa się z ojcem. W ostatniej scenie Luke przytula i pociesza Leię, a Lando Calrissian i Chewbacca ruszają na poszukiwanie Hana Solo.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Powrót Jedi
+                    <div>
+                        <p>25 V 1983 | Richard Marquand | 2g 11m</p>
+                        <button id="ST_B_6" type="button" class="home_btn hb_warning" onclick="StarWars6()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_6" style="display: none;">
+                        <li>Jest rok 4 ABY. Minął rok od wydarzeń z Imperium kontratakuje i cztery lata od wydarzeń z Nowej nadziei. Luke Skywalker ma nowy, zielony miecz i jest już doświadczonym rycerzem Jedi. Ten rok uczynił go spokojniejszym, mądrzejszym i bardziej odpowiedzialnym.</li>
+                        <li>Na Tatooine, R2-D2 i C-3PO dostają się do pałacu Jabby, który trzyma w nim zamrożonego w karbonicie Hana Solo jako ozdobę. Luke jako hologram informuje Hutta, że to prezent od niego. W pałacu znajduje się także już Lando Calrissian jako najemnik. Wszystko to jest częścią planu mającego na celu oswobodzenie Hana Solo. Wkrótce w pałacu zjawia się także Księżniczka Leia pod postacią łowcy nagród i jej „zdobycz” – Chewbacca. W czasie gdy Jabba i cała jego świta złożona z przedstawicieli wielu różnych gatunków zamieszkujących galaktykę (m.in. jego Twile'kańskiego majordomusa Biba Fortuny i muzycznego zespołu Maxa Rebo) odsypia imprezę, Leia uwalnia Hana z karbonitu. Zostają jednak nakryci przez Jabbę. Pojawia się sam Luke Skywalker. Han usiłuje przekupić Jabbę, zaś Luke daje mu wybór: uwolni ich albo zginie. Gangster okazuje się być jednak odporny na Moc. Leia zostaje niewolnicą Jabby, Jedi zaś zostaje zmuszony do walki z potworem Hutta – Rancorem, którego zabija. Rozwścieczony Jabba skazuje w końcu Hana i Luke’a na śmierć poprzez wrzucenie ich do jamy wielkiego, krwiożerczego bezkręgowca – Sarlacca. Nad jego legowiskiem wywiązuje się walka. Boba Fett wpada do paszczy Sarlacca, natomiast Jabba zostaje uduszony przez Leię łańcuchem, na którym ją trzymał. Barka Hutta eksploduje, a Luke’owi, Lei, Hanowi, Chewbacce, Lando i droidom udaje się bezpiecznie uciec.</li>
+                        <li>Luke leci na Dagobah, kontynuować szkolenie, lecz Yoda mówi mu, iż jest on już wystarczająco wyszkolony oraz potwierdza, że Darth Vader jest ojcem młodzieńca. Mówi także, że jest jeszcze drugi Skywalker zdolny pokonać Imperium. Po wypowiedzeniu tego zdania umiera, mając 900 lat. Następnie Luke rozmawia z duchem Obi-Wana Kenobiego, który wyjaśnia mu, dlaczego nie powiedział mu prawdy o jego ojcu. Twierdzi, że to że Vader zabił Anakina Skywalkera jest w jakimś sensie prawdą, gdyż gdy przeszedł on na ciemną stronę Mocy, dobry człowiek jakim był w zasadzie „umarł”. Wyjawia mu także, że drugim Skywalkerem jest Leia – siostra bliźniaczka Luke’a. Skywalker wraca do bazy, gdzie okazuje się, że Imperium buduje nową Gwiazdę Śmierci, a ostatni etap budowy nadzoruje sam Imperator.</li>
+                        <li>Na jednym z krążowników Sojuszu Rebeliantów, Mon Mothma i Admirał Ackbar prezentują plan ostatecznej bitwy z Imperium – jako że druga Gwiazda Śmierci jest chroniona polem energetycznym wysyłanym z potężnego nadajnika na księżycu Endor, rebelianci postanawiają wysłać tam grupę szturmową pod przywództwem Hana Solo (do którego dołączyła także Leia, Chewie, droidy i Luke) aby zniszczyć imperialny kompleks. Wtedy też rebelianckie myśliwce będą mogły wlecieć do wnętrza stacji i zniszczyć reaktor, co doprowadzi do wybuchu. Ten atak poprowadzić ma Lando Calrissian z pokładu Sokoła Millenium, którego Han użycza mu na potrzeby tej misji. Gdy grupka szturmowa przelatuje koło Gwiazdy Śmierci, Vader wyczuwa na pokładzie Luke’a i prosi Palpatine’a by pozwolił mu schwytać syna.</li>
+                        <li>Grupa szturmowa ląduje na Endorze, gdzie dochodzi do pierwszego starcia ze szturmowcami Imperium. Wkrótce potem bohaterowie natykają się na plemię tubylców – małe, futrzaste Ewoki. Po kilku zabawnych nieporozumieniach (C-3PO zostaje uznany za Boga, Han ledwo unika śmierci) bohaterom udaje się w końcu zaskarbić sobie przyjaźń Ewoków. Tej nocy Luke opuszcza ich wioskę przedtem wyjawiając Lei, że jest jego siostrą. Wkrótce młody Jedi staje twarzą w twarz z ojcem. Bezskutecznie usiłuje powrócić go na stronę dobra, natomiast Vader próbuje przeciągnąć syna na ciemną stronę Mocy. Mówi mu także, że jeśli mu się to nie uda będzie zmuszony zabić syna. Wtedy Luke stwierdza, że Obi-Wan miał jednak rację – „jego ojciec naprawdę umarł”.</li>
+                        <li>Niewiele później przed stacją kosmiczną wyskakuje z nadprzestrzeni cała rebeliancka flota gwiezdna, lecz na chwilę przed atakiem Lando Calrissian domyśla się, że Hanowi nie udało się jeszcze wyłączyć tarczy chroniącej potężną superbroń. Niespodziewanie flota Sojuszu zostaje zaatakowana przez setki myśliwców Imperium, gdyż Imperator przewidział ten ruch Sojuszu i ukrył swą flotę po drugiej stronie księżyca, by teraz zamknąć rebeliancką flotę w pułapce. Tak zaczęła się bitwa o Endor.</li>
+                        <li>Han, Leia i Chewie dostają się do imperialnego bunkra. Przed przejęciem nad nim kontroli powstrzymuje ich oddział szturmowców Imperium, co także jest częścią planu Palpatine’a. Luke wraz z Vaderem staje przed obliczem Imperatora, a ten stara się przeciągnąć go na ciemną stronę Mocy. Wyjawia mu, że „przejęcie” planów drugiej Gwiazdy Śmierci przez rebeliantów było przez niego zaplanowane, że na Endorze czeka na grupę szturmową Hana oddział szturmowców. Na dodatek udowadnia, że Gwiazda jest w rzeczywistości w pełni sprawna. Na jego rozkaz superlaserem zostaje zniszczony jeden z krążowników gwiezdnych Sojuszu. Na Endorze jednak nie wszystko idzie zgodnie z planem Imperatora, gdyż pojmanym rebeliantom niespodziewanie przychodzą na pomoc wyposażone w prymitywną broń, ale waleczne i nieobliczalne Ewoki. Rozpętuje się strzelanina, a Han i Leia próbują po raz kolejny dostać się do bunkra. Bitwa trwa na terenie lasów dookoła imperialnego kompleksu, gdzie dochodzi do pojedynku. Wyposażeni w nowoczesną broń żołnierze Imperium zostają rozgromieni przez Ewoki, które niszczą dwie Imperialne Maszyny Kroczące, Chewbacca z dwoma Ewokami przejmuje zaś kontrolę nad trzecim. Han znajduje w końcu sposób, by wysadzić bunkier i rebelianckie myśliwce na czele z Lando Calrissianem rozpoczynają szturm na reaktor Gwiazdy Śmierci.</li>
+                        <li>W międzyczasie Palpatine usiłuje bezskutecznie przeciągnąć Luke’a na ciemną stronę Mocy. W końcu młody Skywalker rozpoczyna pojedynek na miecze świetlne z ojcem. Wciąż usiłuje wyzwolić w swoim ojcu ducha Jedi, nie chce też ani walczyć z Vaderem ani zabić Imperatora wiedząc iż tym samym ciemna strona pozyskałaby go dla siebie. W końcu Vader prowokuje Luke’a stwierdzeniem, że skoro on nie przejdzie na ciemną stronę, to jest jeszcze jeden Skywalker, którego Vader dla niej zdobędzie – Leia. Luke w końcu wyzwala w sobie – ku radości Palpatine’a – cały gniew i pokonuje Sitha. Gdy Luke stoi nad pokonanym Vaderem, Palpatine mówi mu by zabił teraz ojca i zastąpił go przy jego boku, lecz Luke odrzuca miecz świetlny – nie zabije Vadera, gdyż jest rycerzem Jedi. Imperator widzi, że nie udało się przeciągnąć młodego Skywalkera na ciemną stronę, więc razi go błyskawicami Mocy. Cierpiący z bólu Luke, jeszcze raz apeluje do ojca. Anakin Skywalker jako Darth Vader ratuje syna, zabijając Imperatora, poprzez wrzucenie go do głębokiego szybu; tym samym wraca na Jasną Stronę Mocy. Palpatine, broniąc się, uszkadza mechanizmy podtrzymujące Anakina przy życiu. Luke wraz z wyczerpanym ojcem ucieka ku promowi, Anakin, wiedząc że jego życie dobiega kresu, prosi syna by zdjął mu maskę, gdyż chce spojrzeć na niego swoimi własnymi oczami. Żegna się z nim i umiera. Luke’owi wraz z ciałem ojca udaje się uciec ze stacji przed wybuchem.</li>
+                        <li>W międzyczasie myśliwce Rebelii docierają do wnętrza Gwiazdy i niszczą reaktor torpedami protonowymi, co w rezultacie wywołuje ogromną i potężną reakcję łańcuchową i doprowadza do jej zniszczenia. Widząc to, imperialni dowódcy zaczynają się wycofywać z pola bitwy. Sojusz wygrywa. Na Endorze Luke urządza ojcu pogrzeb – pali jego ciało[3]. Zwolennicy na różnych planetach świętują zwycięstwo nad Galaktycznym Imperium. Na koniec widać świętowanie na Endorze w wiosce Ewoków, gdzie wraz z tubylcami bawią się Luke, Leia, Han, Lando, Chewbacca, droidy, a także niektórzy żołnierze Rebelii. Luke’owi w wiosce ukazują się duchy Obi-Wana Kenobiego, Mistrza Yody, a także Anakina Skywalkera, co jest dowodem na jego ostateczne zjednoczenie się z Mocą.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Przebudzenie Mocy
+                    <div>
+                        <p>18 XII 2015 | J. J. Abrams | 2g 16m</p>
+                        <button id="ST_B_7" type="button" class="home_btn hb_warning" onclick="StarWars7()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_7" style="display: none;">
+                        <li>Jest rok 34 ABY. Minęło 30 lat od wydarzeń z części szóstej. Po zniszczeniu drugiej Gwiazdy Śmierci Luke Skywalker tajemniczo zniknął, a schedę po Galaktycznym Imperium przejął Najwyższy Porządek, który chce zlikwidować ostatniego Jedi i doszczętnie zniszczyć Nową Republikę. Na czele Ruchu Oporu staje siostra bliźniaczka Luke’a, Leia, która usiłuje go znaleźć i nakłonić do pomocy w walce przeciw Najwyższemu Porządkowi. W tym celu wysyła swojego najlepszego pilota, Poe Damerona, na planetę Jakku. Tam spotyka się on z Lor San Tekkiem, który przekazuje mu mapę z miejscem pobytu Luke’a. W tym samym czasie szturmowcy Najwyższego Porządku pod wodzą Kylo Rena atakują wioskę i chwytają Damerona. Wcześniej udaje mu się umieścić mapę w małym droidzie BB-8. Po pewnym czasie spotyka go zbieraczka złomu, Rey i przygarnia do siebie. Tymczasem Ren, torturując Damerona, dowiaduje się o droidzie i rozpoczyna jego poszukiwania.</li>
+                        <li>Po masakrze na Jakku jeden ze szturmowców FN-2187, nie mogąc dłużej znieść takiego życia, uwalnia Damerona i ucieka z nim TIE fighterem. Wtedy też Poe nadaje mu imię „Finn”. Ścigani przez Najwyższy Porządek rozbijają się na Jakku, ale po katastrofie Finn orientuje się, że jest sam. W jednej z wiosek spotyka Rey i BB-8. Tam szybko zostają wytropieni i zaatakowani przez wrogie myśliwce. Kradną więc starego, wysłużonego Sokoła Millenium i odlatują nim z planety, a Sokół po pewnym czasie zostaje przechwycony przez statek Hana Solo.</li>
+                        <li>Tymczasem w głównej bazie Najwyższego Porządku – planecie zmienionej w superbroń zdolną do niszczenia systemów gwiezdnych – Najwyższy Wódz, Snoke, wydaje generałowi Huxowi rozkaz jej użycia. W ten sposób zostaje zniszczona stolica Republiki i jej flota. Z kolei Kylo Ren dowiaduje się od Snoke’a, że musi zabić swojego ojca, Hana Solo, by pokonać jasną stronę Mocy, która go kusi. Najwyższy Porządek przypuszcza więc atak na planetę Takodana. Tam Han, Chewbacca i Finn zostają uratowani przez myśliwce Ruchu Oporu, którym przewodzi Dameron, ale Rey zostaje schwytana i zabrana do głównej bazy. Podczas przesłuchania przez Kylo Rena opiera się jego Mocy i odkrywa, że ona również ją posiada. Dzięki niej ucieka z sali przesłuchań.</li>
+                        <li>Han, Chewbacca, Finn i BB-8 przybywają do bazy ruchu oporu na D’Qar, gdzie spotykają Leię oraz C-3PO i R2-D2, który od czasu zniknięcia Luke’a zostaje w stanie hibernacji. Ponieważ Najwyższy Porządek przygotowuje się do zniszczenia D’Qar, rebelianci opracowują plan zniszczenia ich superbroni. Leia nalega również, by Han przyprowadził ich syna z powrotem do domu. Za pomocą Sokoła Millenium Han, Chewbacca i Finn przenikają do wnętrza bazy, gdzie dezaktywują jej osłony i znajdują Rey. Han stawia też czoło Kylo Renowi i błaga go, by porzucił ciemną stronę Mocy. Ten mimo wewnętrznego rozdarcia przebija Hana swoim mieczem świetlnym, zabijając go. Wówczas Chewbacca rani go strzałem ze swej broni. Tymczasem myśliwce Ruchu Oporu rozpoczynają atak na bazę.</li>
+                        <li>Ranny Kylo Ren ściga Finna i Rey; pokonuje byłego szturmowca, lecz Rey bierze miecz świetlny Finna i sama rozpoczyna walkę z Kylo Renem. Dzięki Mocy udaje jej się obezwładnić przeciwnika, ale po chwili zostają rozdzieleni przez szczelinę w ziemi. Dziewczyna, wraz z Finnem i Chewbakką, ucieka Sokołem Millenium, a Kylo Ren na rozkaz Snoke’a zostaje ewakuowany z bazy, która zostaje ostatecznie zniszczona przez rebeliantów. Podczas, gdy na D’Qar Ruch Oporu świętuje zwycięstwo, Leia, Chewbacca i Rey opłakują śmierć Hana. Nieoczekiwanie R2-D2 budzi się z hibernacji i ujawnia brakującą część mapy, która pozwala Rey odszukać Luke’a na odległej planecie Ahch-To</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Ostatni Jedi
+                    <div>
+                        <p>15 XII 2017 | Rian Johnson | 2g 32m</p>
+                        <button id="ST_B_8" type="button" class="home_btn hb_warning" onclick="StarWars8()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_8" style="display: none;">
+                        <li>Akcja filmu rozgrywa się w roku 34 ABY, zaraz po zakończeniu wydarzeń z siódmej części. Wojownicy Ruchu Oporu dowodzeni przez generał Leię Organę ewakuują swoją główną bazę. Operacją kieruje porucznik Connix. Dociera do nich flota Najwyższego Porządku. Poe Dameron prowadzi skuteczny, ale kosztowny kontratak. Statki Ruchu Oporu wskakują w nadprzestrzeń, aby uciec. Za pomocą urządzenia śledzącego, Najwyższy Porządek kontynuuje pościg. Podczas ataku syn Leii, Kylo Ren, niszczy kolejne pokłady głównego statku Ruchu Oporu, ale waha się wystrzelić pocisk w mostek Raddusa – okręt, na którym wyczuwa obecność swojej matki. Myśliwce TIE niszczą mostek, zabijając wielu przywódców Ruchu Oporu, w tym admirała Ackbara. Leia ratuje się za pomocą Mocy, ale jest niezdolna do dalszego działania. Dowództwo przejmuje wiceadmirał Amilyn Holdo. Jej działania nie podobają się Poe.</li>
+                        <li>Przebudzony ze śpiączki po walce w lesie na Bazie Starkiller, Finn postanawia wywieźć urządzenie naprowadzające, żeby nie narażać Rey na powrót do Ruchu Oporu w samym środku walki. Postanawia uciec kapsułą ratunkową, jednak zostaje ogłuszony przez mechanik Rose Tico. Finn budzi się ciągnięty przez Rose na pomocniczy mostek Raddusa, gdzie może mu zostać postawiony zarzut dezercji. Rose początkowo uznaje byłego szturmowca za tchórza, jednak zmienia zdanie, kiedy chłopak wyjawia jej, że Najwyższy Porządek potrafi śledzić flotę Ruchu Oporu w nadprzestrzeni.</li>
+                        <li>Poe, Rose i Finn obmyślają plan mający na celu wyłączenie systemu namierzającego znajdującego się na statku Snoke’a. O pomoc w dostaniu się na Supremacy proszą Maz Kanatę, jednak ta nie może w tej chwili im pomóc i proponuje bohaterom, aby udali się do miasta Canto Bight, gdzie o wysokie stawki gra obecnie arcymistrz włamywacz. Finn, Rose i BB-8 opuszczają w tym celu Raddusa. Poe utajnia plan. Za jego namową porucznik Connix oszukuje Holdo, która dostrzega na iluminatorach statek Finna i Rose, wmawiając jej, że to pył kosmiczny.</li>
+                        <li>Po przybyciu na Ahch-To z Chewbaccą i R2-D2 na pokładzie Sokoła Millenium, Rey spotyka się z Lukiem Skywalkerem. Rey prosi go, by pomógł jej poznać tajniki Mocy i został jej mistrzem. Luke odmawia, ponieważ obawia się ponownej porażki. Wcześniej szkolił Bena Solo, a ten przeszedł na ciemną stronę Mocy. Rey wyjawia Luke’owi, że Ruch Oporu przegrywa w walce z Najwyższym Porządkiem, a Han Solo zginął z ręki syna. Poproszony przez R2-D2, Luke ostatecznie zgadza się uczyć Rey. Bez wiedzy Luke’a, Rey i Kylo zaczynają komunikować się ze sobą poprzez wizje. Luke i Kylo przekazują Rey różne relacje z wydarzeń, które skłoniły Kylo do przejścia na Ciemną stronę. Luke wyznał, że rozważał zabicie Kylo po odkryciu jego zepsucia przez Naczelnego Przywódcę Snoke’a. Nie mogąc przekonać Luke’a do przyłączenia się do Ruchu Oporu, Rey opuszcza Ahch-To bez niego. Twierdzi, że w Kylo cały czas jest dobro i chce go przekonać, żeby wrócił na Jasną stronę Mocy. Luke widzi ducha Yody, który niszczy świątynię Jedi na Ahch-To i mówi mu, że porażka jest największym nauczycielem.</li>
+                        <li>Holdo ujawnia swój plan dyskretnej ewakuacji pozostałych członków Ruchu Oporu za pomocą małych transportów. Wierząc, że jej działania są tchórzliwe i ryzykowne, Poe prowokuje bunt.</li>
+                        <li>W Canto Bight Finn i Rose zostają aresztowani za zaparkowanie statku na publicznej plaży i tracą możliwość spotkania z arcymistrzem włamywaczem. Trafiają do więzienia, ale udaje im się uciec przy pomocy DJ. Rose i Finn demolują ulice miasta uciekając na wyścigowych fathierach. Ich statek zostaje zniszczony przez siły policyjne, jednak ostatecznie zostają uratowani przez BB-8 i DJ-a, którym udało się ukraść luksusowego Libretyna.</li>
+                        <li>Po przedarciu się na statek Snoke’a, zostają złapani przez BB-9E i Kapitan Phasmę. Tymczasem Rey ląduje na statku Snoke’a i zostaje pojmana przez Kylo, który zabiera ją do Naczelnego Przywódcy. Podczas konfrontacji ze Snokiem, Rey próbuje skierować Kylo na stronę Ruchu Oporu. Snoke ujawnia, że kontrolował mentalny związek między nią a Kylo jako część planu zniszczenia Luke’a. Zmuszony do zabicia Rey, Kylo zabija Snoke’a i współpracuje z Rey, by zabić gwardzistów Naczelnego Przywódcy. Kylo prosi Rey, by razem rządzili galaktyką, ale dziewczyna odmawia. Używając Mocy, walczą o posiadanie miecza świetlnego Anakina Skywalkera. Miecz wybucha i zostaje zniszczony.</li>
+                        <li>Leia odzyskuje przytomność, ogłusza Poe i pozwala rozpocząć ewakuację Raddusa. Holdo pozostaje na głównym statku, aby zmylić flotę Snoke’a, gdy wszyscy inni uciekają do starej bazy Sojuszu Rebeliantów na pobliskiej planecie Crait. DJ ujawnia plan ucieczki rebeliantów Najwyższemu Porządkowi. Generał Hux rozkazuje niszczyć transportowce. Widząc to, Holdo postanawia poświęcić swoje życie. Ustawia swój statek na prędkość światła i rozbija się na okręcie flagowym Snoke’a. Rey ucieka w panice, podczas gdy Kylo ogłasza się nowym Naczelnym Przywódcą. BB-8 uwalnia Rose i Finna, którzy uciekają po pokonaniu kapitan Phasmy i dołączają do ocalałych z ewakuacji. Kiedy na Crait przybywa Najwyższy Porządek, Poe, Finn i Rose prowadzą szarżę starymi śmigaczami, ale ponoszą ciężkie straty. Rey przylatuje Sokołem Millenium i odciąga myśliwce TIE, a Rose ratuje Finna przed samobójczym atakiem przeciwko głównej broni wroga, która następnie wypala dziurę w bramie twierdzy Ruchu Oporu.</li>
+                        <li>Luke zjawia się na Crait. Kylo Ren rozkazuje skierować całą broń na swojego dawnego mistrza. Po zmasowanym ostrzale, Skywalker nie ponosi żadnego urazu. Kylo jest mocno zdenerwowany. Luke staje do bezpośredniej konfrontacji z Renem, dzięki czemu daje czas na ucieczkę ocalałym bojownikom Ruchu Oporu. Kylo przeszywa na wylot mieczem świetlnym Luke’a, ale dowiaduje się, że walczył z projekcją Mocy, a Luke wciąż jest na Ahch-To. Rey czyści Mocą zablokowany kamieniami tunel za bazą, aby pozostali bojownicy Ruchu Oporu mogli uciec. Luke spokojnie odchodzi i jednoczy się z Mocą. Ruch Oporu ucieka na pokładzie Sokoła. W Canto Bight jedno z dzieci, które pomogło Finnowi i Rose uciec, chwyta miotłę Mocą i spogląda w niebo.</li>
+                    </ul>
+                  </li>
+                  <li class="filmTitle">Skywalker. Odrodzenie
+                    <div>
+                        <p>20 XII 2019 | J. J. Abrams | 2g 22m</p>
+                        <button id="ST_B_9" type="button" class="home_btn hb_warning" onclick="StarWars9()">
+                            <span class="home_btn_txt">Pokaż Spoilery</span>
+                            <span class="home_btn_icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <ul id="ST_L_9" style="display: none;">
+                        <li>Akcja filmu rozgrywa się w roku 35 ABY, czyli rok po wydarzeniach ukazanych w poprzedniej części filmu. Kylo Ren przylatuje na planetę Mustafar, gdzie znajduje się artefakt Sithów. Urządzenie naprowadza go na niezbadaną planetę Exegol, gdzie znajduje się odrodzony Sheev Palpatine. Imperator ujawnia, że stworzył Snoke'a jako swoją marionetkę, aby kontrolować Najwyższy Porządek i zwabić Kylo na Ciemną Stronę. Palpatine odkrywa tajną flotę Gwiezdnych Niszczycieli. Rey kontynuuje trening Jedi pod okiem dowódcy Ruchu Oporu – Lei Organy. Finn i Poe Dameron dostarczają informacje od szpiega, że Palpatine żyje i przebywa na Exegolu. Za pomocą starych ksiąg Jedi, Rey dowiaduje się, że muszą odnaleźć artefakt Sithów. Rey, Finn, Poe, Chewbacca, BB-8 i C-3PO na pokładzie Sokoła Millenium udają się na planetę Pasaana w poszukiwaniu Ochiego, który mógł mieć styczność z artefaktem.</li>
+                        <li>Grupa spotyka Lando Calrissiana, który wskazuje im ostatnią znaną lokalizację Ochiego. Dzięki więzi mocy, Kylo dowiaduje się gdzie jest Rey i udaje się tam z Rycerzami Ren. Na pustyni, Rey i pozostali, odkrywają szczątki martwego Ochiego, wrak jego statku, droida D-O i sztylet z tekstem w języku Sithów. Rey wyczuwa obecność Kylo w pobliżu i stara się go zlikwidować. Żołnierze Najwyższego Porządku pojmują Chewbaccę, który posiada schowany sztylet. Za pomocą Mocy, Rey próbuje uratować Chewbaccę. Przypadkowo dziewczyna wypuszcza błyskawice i niszczy transportowiec Najwyższego Porządku. Grupa jest przekonana, że Chewbacca zginął w eksplozji.</li>
+                        <li>Bohaterowie podróżują na planetę Kijimi, gdzie znajduje się programista, który przeprogramowuje C-3PO tak by ten mógł odczytać pismo Sithów. W procesie C-3PO traci pamięć, ale ujawnia współrzędne artefaktu na Kef Bir. Rey wyczuwa, że Chewbacca żyje, a grupa organizuje misję ratunkową. Podczas gdy Kylo szuka Rey, grupa infiltruje jego Gwiezdnego Niszczyciela z pomocą Zorii Bliss, znajomej Poe sprzed lat. Rey odzyskuje sztylet i w wizji widzi śmierć swoich rodziców. Kylo informuje ją, że jest wnuczką Palpatine'a. Lord Sithów nakazał Ochiemu porwać Rey, gdy ta była dzieckiem, ale rodzice ukryli ją na Jakku, aby ją chronić. Generał Hux ratuje Poego, Finna i Chewbaccę przed egzekucją, ujawniając się jako szpieg. Pozwala grupie uciec na Sokoła, przez co zostaje stracony.</li>
+                        <li>Grupa przybywa na Kef Bir. Jannah, były szturmowiec i sympatyk Ruchu Oporu, prowadzi ich do pozostałości drugiej Gwiazdy Śmierci, gdzie Rey znajduje artefakt. Kylo również przybywa na Kef Bir, niszczy artefakt i namawia Rey, by razem zabili i zastąpili Palpatine'a. Leia kontaktuje się z Kylo przez Moc i umiera. Rozproszony Ren, zostaje przebity mieczem przez Rey. Wyczuwając śmierć Lei, Rey uzdrawia Kylo za pomocą Mocy, porywa jego statek i udaje się na Ahch-To na wygnanie. Duch Mocy Luke'a daje Rey miecz świetlny Lei i zachęca ją do zmierzenia się z Palpatinem. Dzięki artefaktowi Kylo, Rey odnajduje Exegol. Han Solo objawia się Kylo w postaci wspomnienia i przekonuje syna do powrotu na Jasną Stronę Mocy. Ren wyrzuca swój miecz świetlny i wyrusza pomóc Rey jako Ben Solo. Palpatine za pomocą jednego ze swoich Gwiezdnych Niszczycieli wyposażonych w superlaser, niszczy Kijimi jako pokaz siły.</li>
+                        <li>W bazie Ruchu Oporu, R2-D2 przywraca pamięć C-3PO po powrocie grupy. Całe siły Ruchu zostają wysłane na Exegol, gdzie konfrontują się z jednostkami Palpatine'a. Imperator każe wnuczce, by ta go zabiła, aby przenieść w nią swojego ducha. Lando zjawia się z posiłkami z całej galaktyki. Dochodzi do ogromnej bitwy. Na Exegolu, Ben unieszkodliwia Rycerzy Ren i dołącza do Rey. Palpatine wyczuwa rzadką więź łączącą Bena i Rey, przejmuje ich Moc i zyskuje siły. Odmłodzony Imperator, atakuje flotę Ruchu Oporu błyskawicami Mocy i obezwładnia Bena. Osłabiona Rey słyszy głosy dawnych Jedi, dzięki którym odzyskuje siły. Palpatine atakuje ją swoją błyskawicą, ale Rey odbija ją za pomocą miecza świetlnego Skywalkera, zabijając go i siebie. Ben ożywia Rey, przenosząc na nią swoją siłę życiową, całuje ją i umiera, stając się jednym z Mocą. Ruch Oporu niszczy resztę armady Palpatine'a. Żołnierze Ruchu Oporu świętują. Rey odwiedza opuszczone gospodarstwo Larsów na Tatooine, gdzie dorastał Luke. Zakopuje miecze świetlne Skywalkerów. Przechodzień pyta o jej imię i nazwisko, a ona odpowiada: Rey Skywalker.</li>
+                    </ul>
+                  </li>
+              </ol>
+
+              <h1 class="title">Star Wars</h1>
+              <h3 class="subtitle">Spin-offy</h3>
+
+              <ol class="filmList" type="I">
+                <li class="filmTitle">Łotr 1
+                  <div>
+                      <p>16 XII 2016 | Gareth Edwards | 2g 16m</p>
+                      <button id="ST_B_A1" type="button" class="home_btn hb_warning" onclick="StarWarsA1()">
+                          <span class="home_btn_txt">Pokaż Spoilery</span>
+                          <span class="home_btn_icon">
+                              <i class="fas fa-exclamation-triangle"></i>
+                          </span>
+                      </button>
+                  </div>
+                  
+                  <ul id="ST_L_A1" style="display: none;">
+                    <li>Naukowiec Galen Erso ukrywa się na planecie Lah'mu przed Orsonem Krennikem, dyrektorem Badań nad Zaawansowana Bronią dla armii imperialnej. Mimo wszelkich starań Galen zostaje odnaleziony. Gdy tylko się o tym dowiaduje, każe żonie – Lyrze i ich córce – Jyn uciekać. Po wydostaniu się z domostwa, Lyra daje Jyn kryształ kyber, mówiąc przy tym, by zaufała Mocy. Krennic przybywa na planetę, aby pojmać Galena i zmusić go do ukończenia Gwiazdy Śmierci, superbroni zdolnej zniszczyć całą planetę. Dziewczynka ukrywa się w trawie i jest świadkiem zastrzelenia swojej matki przez szturmowców. Galen zostaje porwany, a Jyn ucieka i chowa się. Zostaje odnaleziona przez Sawa Gerrerę, zaprawionego w bojach weterana, którego ekstremalne metody walki nie podobają się Rebelii.</li>
+                    <li>Piętnaście lat później, pilot transportowca w siłach Imperium Galaktycznego – Bodhi Rook, przemyca hologram z wiadomością Galena Erso do Sawa Gerrery. Agent wywiadu Rebelii, kapitan Cassian Andor uwalnia Jyn z imperialnej niewoli i transportuje ją na Yavin 4, by spotkała przywódczynię Rebelii – Mon Mothmę. Jyn i Cassian dostają zadanie odszukania Galena. Jyn myśli, że mają zdobyć informacje o Gwieździe Śmierci, lecz Cassian otrzymuje rozkaz zabicia Galena.</li>
+                    <li>Jyn, Cassian i przeprogramowany imperialny droid K-2SO wyruszają na planetę Jedha, gdzie Imperium wydobywa kryształy kyber, które potrzebne są do zasilenia Gwiazdy Śmierci. Bohaterowie są wplątani w akcję partyzancką ludzi Sawa Gerrery. Wraz z Bazem Malbusem i niewidomym Chirrutem Îmwe zostają przez nich pojmani. Trafiają do więzienia Sawa Gerrery gdzie spotykają torturowanego Bodhiego Rooka. Jyn rozmawia z Sawem, który pokazuje jej nagrany przez Galena hologram. Okazuje się, że Gwiazda Śmierci posiada wadę konstrukcyjną, przez co łatwo ją zniszczyć. Plany superbroni ukryte są w imperialnej bazie na planecie Scarif.</li>
+                    <li>Orson Krennic i Wilhuff Tarkin chcąc przetestować Gwiazdę Śmierci, strzelają jej laserem w Jedhę. Jyn, Cassian, K-2SO, Baze, Chirrut i Bodhi uciekają z planety, a Saw Gerrera i jego ludzie giną. Tarkin gratuluje Krennikowi udanej akcji. Przekazanie wiadomości o defekcie Gwiazdy Śmierci daje Tarkinowi pretekst do przejęcia kontroli nad superbronią. To nie podoba się ambitnemu Krennikowi.</li>
+                    <li>Bodhi prowadzi grupę do Imperialnego Ośrodka Badawczego na planecie Eadu, gdzie znajduje się Galen. Cassian ma możliwość zabicia ojca Jyn, lecz rezygnuje z wykonania zadania. Zdenerwowany Krennic przylatuje na planetę. Chce się dowiedzieć kto jest winny wyciekowi informacji o defekcie. Galen przyznaje się do sabotażu. Krennic rozkazuje wymordować zespół inżynierów Galena. Rebelianckie myśliwce bombardują Ośrodek Badawczy. Krennic ucieka, Galen jest ranny i umiera w ramionach Jyn. Krennic udaje się na Mustafar, do siedziby Dartha Vadera, by ten wstawił się za niego u Imperatora Palpatine’a. Vader nie pomaga Krennicowi.</li>
+                    <li>Na Yavin 4 odbywa się posiedzenie Rady Sojuszu Rebelii. Jyn chce wykraść plany Gwiazdy Śmierci, lecz nie zyskuje poparcia Rady. Sfrustrowana Jyn szuka ochotników, którzy jej pomogą. Wraz z grupą rebeliantów oraz K-2SO, Bodhim, Chirrutem, Bazem i Cassianem, udają się na Scarif skradzionym imperialnym statkiem, którego nazywają Łotr 1. Jyn oraz Cassian zdobywają imperialne mundury i razem z K-2SO wchodzą do bazy. Pozostali bohaterowie odwracają uwagę. Dochodzi do bitwy, o której dowiaduje się flota Rebelii. Admirał Raddus postanawia wesprzeć Łotra 1 i wysyła swoje statki. Bodhi Rook ginie od wybuchu granatu po tym jak poinformował Radussa, że Jyn i Cassian nie będą mogli przesłać planów, jeśli osłony otaczające planetę nie zostaną wyłączone. K-2SO odpiera atak szturmowców, poświęca się, by umożliwić Jyn i Cassianowi zdobycie planów. Erso i Andor wpadają w zasadzkę Krennika. Jyn zdobywa plany, a Cassian zostaje postrzelony i spada w otchłań.</li>
+                    <li>Chirrut i Baze zostają zastrzeleni przez szturmowców po tym, jak udaje im się dezaktywować osłony. Większość rebeliantów zginęło. Krennic trzyma Jyn na muszce i ogłasza, że Imperium wygrało bitwę. Niespodziewanie pojawia się ranny Cassian, który strzela do Orsona. Jyn przesyła admirałowi Raddusowi plany. Na orbicie pojawia się Gwiazda Śmierci. Tarkin rozkazuje zniszczyć bazę na Scarif. Superbroń strzela laserem, Krennic ginie natychmiastowo, a Jyn i Cassian umierają w swoich objęciach od fali uderzeniowej.</li>
+                    <li>Flota Rebelii przygotowuje się do skoku w nadprzestrzeń. Zostają zaatakowani przez statek Dartha Vadera. Vader wchodzi na pokład i zabija kilku Rebeliantów. Korweta Tantive IV opuszcza flotę wraz z planami. Na pokładzie statku znajduje się księżniczka Leia Organa, która mówi, że plany Gwiazdy Śmierci przyniosły Rebelii nadzieję.</li>
+                  </ul>
+                </li>
+                <li class="filmTitle">Han Solo
+                  <div>
+                      <p>25 V 2018 | Ron Howard | 2g 16m</p>
+                      <button id="ST_B_A2" type="button" class="home_btn hb_warning" onclick="StarWarsA2()">
+                          <span class="home_btn_txt">Pokaż Spoilery</span>
+                          <span class="home_btn_icon">
+                              <i class="fas fa-exclamation-triangle"></i>
+                          </span>
+                      </button>
+                  </div>
+                  
+                  <ul id="ST_L_A2" style="display: none;">
+                      <li>Na planecie Korelia, młody wyrzutek i aspirujący pilot o imieniu Han wraz ze swoją dziewczyną Qi’rą pragną uciec ze szponów miejscowych gangów przestępczych. Z powodzeniem przekupują imperialnego oficera, który zezwala im wejść do terminalu wylotowego. W ostatniej chwili Qi’ra nie zdążyła przejść przez bramkę i zostaje zatrzymana przez swoich prześladowców. Han przysięga, że wróci po nią gdy tylko zdobędzie statek. Aby to się udało, musi zdobyć jakoś pieniądze. Dołącza do imperialnej marynarki wojennej jako kadet-pilot. Podczas rekrutacji oficer prosi Hana o podanie imienia i nazwiska, którego nie ma. Jako że zgłosił się sam, zostaje nazwany Han Solo.</li>
+                      <li>Trzy lata później Han zostaje wyrzucony z Imperialnej Akademii za niesubordynację. Służy jako żołnierz piechoty podczas bitwy na planecie Mimban. Tam napotyka gang przemytników udających imperialnych żołnierzy. Przewodzi im Tobias Beckett. Han szantażuje ich, by pozwolili mu się przyłączyć do ekipy. Beckett każe go aresztować i rzucić „bestii” na pożarcie. Okazuje się, że tą bestią jest Wookiee o imieniu Chewbacca. Dzięki planowi Hana cela zostaje zniszczona. Obaj dostają się na statek Becketta i jego załogi – Val i Rio Duranta. Razem postanawiają napaść na pociąg, by ukraść superpaliwo o nazwie coaxium. W napadzie przeszkadza grupa przestępców dowodzona przez Enfys Nest. Val i Rio ponoszą śmierć, a Han wyrzuca ładunek.</li>
+                      <li>Beckett ujawnia, że otrzymał polecenie kradzieży przesyłki od Dryden Vosa, bezwzględnego przywódcy przestępczego syndykatu Szkarłatny Świt. Han, Chewbacca i Beckett udają się na jacht Vosa, aby prosić go o kolejną szansę. Na statku Han spotyka Qi’rę, która teraz jest członkinią Szkarłatnego Świtu. Han ogłasza plan kradzieży nieprzetworzonego coaxium z kopalni na Kessel. Vos zgadza się i nalega, by towarzyszyła im Qi’ra. Aby zdobyć statek do napadu, Qi’ra przedstawia drużynę Lando Calrissianowi, znakomitemu przemytnikowi i pilotowi. Han rzuca wyzwanie Lando w grze hazardowej Sabacc, gdzie stawką jest okręt Calrissiana – Sokół Millennium. Lando wygrywa dzięki oszustwu. Beckett i Qi’ra przekonują Lando by dołączył do ekipy i użyczył swojego statku. Po dotarciu na Kessel i przeniknięciu do kopalni, pilot Lando – robot L3-37, wywołuje zamieszki. Bohaterowie używają zamieszania, aby ukraść nieprzetworzone, lotne coaxium. L3-37 doznaje poważnych uszkodzeń, a Lando zostaje ranny podczas ucieczki. Han pilotuje statek, wiedząc, że musi pokonać Drogę na Kessel w mniej niż dwadzieścia parseków, jeśli mają dotrzeć do Vosa, nim wybuchnie ładunek. Ogromne umiejętności pilotażowe Hana pozwalają im uniknąć imperialnej blokady. Na planecie Savareen, ekipa natrafia na grupę Enfys Nest, która, jak się okazuje, ma dobre intencje. Załoga Sokoła zostaje podzielona. Lando odlatuje, Beckett odchodzi, a Han, Chewie i Qi’ra postanawiają oszukać Vosa i pomóc Enfys Nest.</li>
+                      <li>Vos zaskakuje zespół, ogłaszając, że przyniesione coaxium jest fałszywe. Ujawnia, że ostrzegł go członek ekipy. Han podejrzewa Qi’rę o zdradę, okazuje się jednak, że „wtyczką” jest Beckett. Han oznajmia, że spodziewał się oszustwa Becketta, a przyniesione przez niego coaxium jest prawdziwe. Beckett bierze Chewbaccę za zakładnika i ucieka z ładunkiem. Pomiędzy Hanem a Vosem dochodzi do walki, do której dołącza Qi’ra. Kobieta zabija Vosa i nalega by Han uratował Chewbaccę. Obiecuje mu, że zaraz do nich dołączy. Han dogania i zabija Becketta. Następnie razem z Chewbaccą dostarczają coaxium Nest, która zamierza wykorzystać coaxium do przeprowadzenia rebelii przeciwko Imperium.</li>
+                      <li>Qi’ra odlatuje sama jachtem Vosa i kontaktuje się z jego przełożonym, byłym Lordem Sithów – Maulem. Informuje go o niepowodzeniu misji i przejmuje pozycję Vosa. Han i Chewbacca odnajdują Lando. Han rzuca mu wyzwanie w sabacca, w którym stawką ponownie jest Sokół Millennium. Przy powitaniu, Solo subtelnie wyjmuje kartę z rękawa Lando. Han wygrywa i razem z Chewbaccą planują udać się na Tatooine, gdzie pewien gangster zbiera ekipę.</li>
+                  </ul>
+                </li>
+
+        </section>
+
         <section class="footer" id="footer">
             <h1 class="title">Footer</h1>
             <h3 class="subtitle">Koniec Strony</h3>
@@ -516,6 +894,164 @@
               }
             }
 
+            function StarWars1() {
+                var btn = document.getElementById("ST_B_1");
+                var list = document.getElementById("ST_L_1");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars2() {
+                var btn = document.getElementById("ST_B_2");
+                var list = document.getElementById("ST_L_2");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars3() {
+                var btn = document.getElementById("ST_B_3");
+                var list = document.getElementById("ST_L_3");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars4() {
+                var btn = document.getElementById("ST_B_4");
+                var list = document.getElementById("ST_L_4");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars5() {
+                var btn = document.getElementById("ST_B_5");
+                var list = document.getElementById("ST_L_5");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars6() {
+                var btn = document.getElementById("ST_B_6");
+                var list = document.getElementById("ST_L_6");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars7() {
+                var btn = document.getElementById("ST_B_7");
+                var list = document.getElementById("ST_L_7");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars8() {
+                var btn = document.getElementById("ST_B_8");
+                var list = document.getElementById("ST_L_8");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWars9() {
+                var btn = document.getElementById("ST_B_9");
+                var list = document.getElementById("ST_L_9");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWarsA1() {
+                var btn = document.getElementById("ST_B_A1");
+                var list = document.getElementById("ST_L_A1");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+            function StarWarsA2() {
+                var btn = document.getElementById("ST_B_A2");
+                var list = document.getElementById("ST_L_A2");
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                    list.style.display = "none";
+                } else {
+                    btn.style.display = "none";
+                    list.style.display = "block";
+                }
+            }
+
+            function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("myTable");
+            switching = true;
+            dir = "asc"; 
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 2; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch= true;
+                    break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                    }
+                }
+                }
+                if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchcount ++;      
+                } else {
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+                }
+                }
+                }
 
 
             let arrow = document.querySelectorAll(".arrow");

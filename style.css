@@ -362,11 +362,18 @@ section.close{
     color: #333;
 }
 .hb_dm{
-    background: var(--dark-mode-btn);
+    background: var(--sidebar-main);
 }
 .hb_dm .home_btn_txt,
 .hb_dm .home_btn_icon i{
     color: white;
+}
+.hb_warning{
+  background: var(--accent);
+}
+.hb_warning .home_btn_txt,
+.hb_warning .home_btn_icon i{
+  color: white;
 }
 .hb_pa{
     background: var(--project-area-btn);
@@ -617,6 +624,84 @@ blockquote{
     font-size: 2rem;
     margin: .5rem;
     cursor: pointer;
+  }
+
+  table{
+    box-shadow: 0 0 20px var(--accent);
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  th, td {
+    border-radius: 10px;
+    background-color: var(--bg-second);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: .5rem;
+  }
+  dt{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent);
+  }
+  dd{
+    color: var(--txt-secound);
+    padding-bottom: 1rem;
+  }
+  .ddActor{
+    color: var(--txt-color);
+    font-weight: 900;
+  }
+  .icon_img{
+    margin: 0 14px;
+    padding: 10px 0;
+  }
+  .icon_img_sec{
+    margin: 0 25px;
+    padding: 10px 0;
+    height: 50px;
+  }
+  .icon_img_mini{
+    height: 20px;
+    width: 20px;
+    align-content: center;
+  }
+  .filmList{
+    box-shadow: 0 0 20px var(--accent);
+    background-color: var(--accent);
+    padding: .5rem;
+    border-radius: 20px;
+    text-align: center;
+    list-style-position: inside;
+  }
+  .filmTitle{
+    background-color: var(--bg-main);
+    border-radius: 20px;
+    font-size: 2rem;
+    padding:20px 0;
+    margin: 10px 0;
+  }
+  .filmTitle p{
+    background-color: var(--bg-second);
+    border-radius: 10px;
+    padding: .5rem 0;
+    margin: 1rem auto;
+    max-width: 400px;
+  }
+  .filmTitle li{
+    background-color: var(--bg-second);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: .5rem 1rem;
+    font-size: .9rem;
+    text-align: justify;
+  }
+  .filmTitle:first-child{
+    margin-top: 0px;
+  }
+
+  .filmTitle:last-child{
+    margin-bottom: 0px;
   }
 
 
