@@ -24,6 +24,8 @@
     --sidebar-sec: #181818;
 
     --sidebar-size: 78px;
+
+
 }
 .light-theme{
     --bg-main: #ddd;
@@ -33,6 +35,10 @@
 
     --sidebar-main: #efefef;
     --sidebar-sec: #ccc;
+}
+@font-face {
+  font-family: RussoOne;
+  src: url(RussoOne.ttf);
 }
 .green-accent{
     --accent: #32cd32;
@@ -60,7 +66,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: RussoOne;
+    letter-spacing: 1.5px;
     font-size: 18px;
 }
 
