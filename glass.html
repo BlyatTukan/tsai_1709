@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TSAI | Part 2</title>
+        <meta name="description" content="Strona na Tworzenie stron i aplikacji internetowych">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Rafał Durka">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="glass.css">
+        <script src="https://kit.fontawesome.com/f914c1df03.js" crossorigin="anonymous"></script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body id="mode">
+        <main id="background" class="style1">
+            <div class="glass">
+                <header>
+                    <div class="title">
+                        <h1>Praca na T.S.A.I.</h1>
+                    </div>
+                    <div class="info">
+                        <span>
+                            <p>Zadanie 2.3 "Flexbox"</p>
+                        </span>
+                    </div>
+                </header>
+
+                <section class="home">
+                    <div class="container">
+                        <h1>Lorem Ipsum</h1>
+                        <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
+                        <h4>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie porttitor mi a suscipit. Cras aliquet tempor mi eget mollis. Donec ac neque nibh. Suspendisse gravida eget elit ut pretium. Pellentesque ullamcorper eget justo sit amet viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed luctus odio ac libero facilisis congue. Morbi vel gravida nulla. Sed venenatis at mauris vitae hendrerit.</p>
+                    </div>
+                    <div class="sidebar">
+                        Kolor Strony
+                        <a onclick="WebMode(false)"><span style="background: linear-gradient(to right top, #ffffff, #d7e1ec);"></span></a>
+                        <a onclick="WebMode(true)"><span style="background: linear-gradient(to right top, #414141, #000000);"></span></a>
+                        Kolor Tła
+                        <a onclick="ChangeLook(1)"><span style="background: linear-gradient(to right top, #009ffd, #2a2a72);"></span></a>
+                        <a onclick="ChangeLook(2)"><span style="background: linear-gradient(to right top, #3bb78f, #0bab64);"></span></a>
+                        <a onclick="ChangeLook(3)"><span style="background: linear-gradient(to right top, #a71d31, #3f0d12);"></span></a>
+                        <a onclick="ChangeLook(4)"><span style="background: linear-gradient(to right top, #ffdd00, #fbb034);"></span></a>
+                        <a onclick="ChangeLook(5)"><span style="background: linear-gradient(to right top, #a4508b, #5f0a87);"></span></a>
+                        <a onclick="ChangeLook(6)"><span style="background: linear-gradient(to right top, #ec9f05, #ff4e00);"></span></a>
+                        <a onclick="ChangeLook(7)"><span style="background: linear-gradient(to right top, #bdd4e7, #8693ab);"></span></a>
+
+                    </div>
+                </section>
+
+                <footer>
+                    <p>Rafał Durka</p>
+                    <p>Strona stworzona w stylu "Glassmorphism"</p>
+                    <p class="email">rafal.durka@zsbem.edu.pl</p>
+                </footer>
+            </div>
+        </main>
+        <div class="bg-circle1"></div>
+        <div class="bg-circle2"></div>
+        <div class="bg-circle3"></div>
+    </body>
+    <script>
+        function ChangeLook(n){
+            var background = document.getElementById("background");
+            if(n > 0) {
+                background.className = "";
+                var _name = "style" + n;
+                background.classList.add(_name);
+            }
+        }
+        function WebMode(n){
+            var body = document.getElementById("mode");
+            if(n) {body.classList.add("dark-mode");}
+            else {body.classList.remove("dark-mode");}
+        }
+    </script>
+</html>
